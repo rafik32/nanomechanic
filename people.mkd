@@ -1,0 +1,83 @@
+---
+layout: page
+title: People
+group: navigation
+nav_weight: 7
+toc: true
+---
+
+## Group Coordinator
+### [Catalin R Picu](http://faculty.rpi.edu/node/471)
+
+> Professor, Associate Head for Undergraduate Studies <br>
+> Department of Mechanical, Aerospace and Nuclear Engineering <br>
+> Rensselaer Polytechnic Institute, Troy, NY 12180 <br>
+> Phone: +1 (518) 276-2195 <br>
+> E-mail: picuc@rpi.edu
+
+## Current Group Members:
+
+### Masters student
+* Manny Rodriguez
+
+### PhD Students:
+* Mithil Kamble
+* Shengguang Jin
+* Nabeel Amjad
+* Nishan Parvez
+* Zhaocheng Zhang
+* Mithun Dey
+* Lauren Zakrzewski
+* Kamrul Hasan Rafi
+
+
+
+### Postdoctoral Researcher:
+* Bhaskhar Paliwal
+
+## Former Group Members:
+
+### Former Masters Students
+* Vineet Negi (currently with Apple)
+* Nabeel Amjad
+* Ehsan Ban (currently at Yale University)
+* Mihai C. Pavel
+* Nithin Mathew (currently with Los Alamos National Lab)
+* Arne Majorell (currently at General Electric Aircraft Engines)
+
+### Former PhD Students
+* Zhi Li (currently with Google)
+* Lijuan Zhang
+* Nithin Mathew (currently with Los Alamos National Lab)
+* Ehsan Ban (currently at Yale University)
+* Ardavan Zandiatashbar (currently with Tesla)
+* Ali Shahsavari (currently at RPI)
+* Abhik Rakshit 
+* [Hamed Hatami-Marbini](mie.uic.edu/profiles/hamed-hatami-marbini/) (currently with University of Illinois at Chicago) 
+* Churamani Gaire (currently with Global Foundries, Malta, NY)
+* Murat S. Ozmusul (currently with ProUSA, NY)
+* Dawei Zhang (currently in China)
+* [Alireza S. Sarvestani](https://engineering.mercer.edu/meet-the-faculty/dr-alireza-sarvestani/) (currently at Mercer University) 
+* Monica A. Soare  (currently with General Electric Research and Development)
+* Peter J. Dionne  (currently with Universal Instruments Inc., NY)
+* Zhijie Xu  (currently with Pacific Northwest National Lab)
+* Renge Li (currently in China)
+* Mohan Nuggehally
+* Deli Liu
+* Zehai Wang
+* Mohammad Islam (currently with University of Pittsburgh)
+* Vineet Negi (currently with Apple)
+* Sai Deogekar (currently with Ansys Inc.)
+* Jacob Merson (currently at RPI)
+* Ahmed Sengab (currently in Egypt)
+* [Mohammad Ronin Khan](http://ronin.buet.ac.bd/) (currently with BUET, Bangladesh) 
+* [Anirban Pal](https://www.wtamu.edu/academics/college-engineering/faculty/anirban-pal-bio.html) (currently with West Texas A&M University)  
+
+
+### Former Postdoctoral Research Associates
+* Prathab Baskar (currently at Tata steel Industries, India)
+* Dybiendu Datta (currently with Navy Research Labs)
+* Krel Matous (currently at University of Notre Dame, IN)
+* [Gopinath Subramanian](http://www.usm.edu/polymer/faculty/gopinath-subramanian) (currently at University of Southern Mississippi)
+* Anu Osta (currently at Rowan University)
+* [Anirban Pal](https://www.wtamu.edu/academics/college-engineering/faculty/anirban-pal-bio.html) (currently with West Texas A&M University)

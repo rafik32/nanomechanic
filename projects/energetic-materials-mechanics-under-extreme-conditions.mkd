@@ -1,0 +1,256 @@
+---
+layout: project
+title: 'Energetic materials: mechanics under extreme conditions'
+sponsors:
+    - name: Army Research Office and the Army Research Labs
+      link: http://www.arl.army.mil/www/default.cfm
+faculty:
+    - name: Catalin Picu
+      title: Professor
+students:
+    - name: Zhaocheng Zhang
+      title: Graduate Research Assistant
+    - name: Mohammad Khan
+      title: Graduated PhD
+    - name: Nithin Mathew
+      title: Graduated PhD
+    - name: Anirban Pal
+      title: Graduated PhD
+toc: true
+---
+
+# What are Energetic Materials?
+Energetic materials are molecular crystals which decompose when subjected to external stimuli, releasing large amount of energy. The trigger of the decomposition reaction may be mechanical, thermal, electrical or optical. These are used as explosives in civilian and military applications. 
+
+A molecular crystal consists of three dimensional arrangements of molecules in a lattice, and is held together by weak inter-molecular forces. A common example of such crystal is water-ice which, in ambient conditions, has a hexagonal lattice with water molecules placed at specific sites of the structure. Most active ingredients of pharmaceuticals are also molecular crystals. A yet different class of molecular crystals is studied for organic electronics applications.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+    <img src="energetic-materials-mechanics-under-extreme-conditions/figure1.png" class="img-responsive" alt="Figure 1" style="width:600px;height:400px;">
+    </div>
+</div>
+<figcaption>
+<b>Figure 1:</b> Upper line: molecular structure of Left: RDX and Right: HMX. Lower line: corresponding crystal structures viewed along the [001] crystallographic direction. Legend: carbon- black, hydrogen-white, nitrogen-blue, oxygen-red.
+</figcaption>
+</figure>
+
+Cyclotrimethylene trinitramine (RDX), with chemical composition `\(C_3 N_6 H_6 O_6\)`, and cyclotetramethylene tetranitramine (HMX), with chemical composition `\(C_4 N_8 H_8 O_8\)`, are molecular crystals used as secondary explosives in various energetic formulations. The RDX and HMX molecules are shown in Fig. 1 along with the unit cells of the respective lattices. Both molecules have a ring formed by successive C and N atoms, and nitro groups are attached to each N atom of the ring. 
+Our group studies the mechanics of the HMX and RDX crystals using atomistic models with the goal of deriving parameters and physical insight required to develop constitutive descriptions which can be used in continuum models of deformation. Such models are employed to predict the sensitivity to unintentional detonation and the performance of the explosive in service. 
+
+# HMX
+
+## *Slip systems and Peierls stresses*
+
+Atomistic models of the `\(\beta\)` phase of HMX, which is stable in ambient conditions, have been used to identify the slip systems and critical resolved shear stress required to move isolated dislocations in the crystal. 
+The identification of slip systems is the entry point in the study of plasticity. Since `\(\beta\)`-HMX has a low symmetry, monoclinic structure, the identification of potential slip systems is nontrivial. In addition, molecular packing is typically different from plane to plane. Hence, even when planes seen symmetric based on the crystal structure alone, they may not be mechanically similar due to the different packing. 
+We developed a method based on a geometric gamma surface concept to screen a large number of potential slip system. These were shortlisted based on the projected energetic cost of slip and the stability and motion of dislocations in the top 10 systems was studied with atomistic models. 
+Table 1 shows the Peierls stress (critical resolved shear stress at 0K) required to move dislocations in the most active systems.
+
+Table 1 shows the Peierls stress (critical resolved shear stress at 0K) required to move dislocations in the most active systems. 
+
+<table>
+  <tr style="background-color:white">
+    <th style='text-align:center;vertical-align:middle' colspan="2"> </th>
+    <th style='text-align:center;vertical-align:middle' colspan="2">Edge dislocation</th> 
+    <th style='text-align:center;vertical-align:middle' colspan="2">Screw dislocaiton</th>
+  </tr>
+  <tr style="background-color:white">
+    <th style='text-align:center;vertical-align:middle' colspan="1">Plane</th>
+    <th style='text-align:center;vertical-align:middle' colspan="1">Burgers Direction</th>
+    <th style='text-align:center;vertical-align:middle' colspan="1"> \(\sigma_{xz}\) < 0 (GPa)</th>
+    <th style='text-align:center;vertical-align:middle' colspan="1"> \(\sigma_{xz}\)  > 0 (GPa)</th>
+    <th style='text-align:center;vertical-align:middle' colspan="1"> \(\sigma_{xz}\)  < 0 (GPa)</th>
+    <th style='text-align:center;vertical-align:middle' colspan="1"> \(\sigma_{xz}\)  > 0 (GPa)</th>
+  </tr>
+  <tr style="background-color:white;text-align:center;vertical-align:middle'">
+    <td colspan="1"> (010)</td>
+    <td colspan="1"> [100]</td> 
+    <td colspan="1"> unstable</td>
+    <td colspan="1"> unstable</td>
+    <td colspan="1"> cross-slip on (01\(\bar{1}\))</td> 
+    <td colspan="1"> cross-slip on (011)</td>
+  </tr>
+  <tr style="background-color:white;text-align:center;vertical-align:middle'">
+    <td colspan="1"> (001)</td>
+    <td colspan="1"> [100]</td> 
+    <td colspan="1"> -0.47</td>
+    <td colspan="1"> unstable</td>
+    <td colspan="1"> cross-slip on (011)</td> 
+    <td colspan="1"> 0.55</td>
+  </tr>
+  <tr style="background-color:white;text-align:center;vertical-align:middle'">
+    <td colspan="1"> (011)</td>
+    <td colspan="1"> (01\(\bar{1}\))</td> 
+    <td colspan="1"> unstable</td>
+    <td colspan="1"> 0.40</td>
+    <td colspan="1"> -0.05</td> 
+    <td colspan="1"> 0.12</td>
+  </tr>
+  <tr style="background-color:white;text-align:center;vertical-align:middle'">
+    <td colspan="1"> (011)</td>
+    <td colspan="1"> [100]</td> 
+    <td colspan="1"> -0.26</td>
+    <td colspan="1"> unstable</td>
+    <td colspan="1"> -0.75</td> 
+    <td colspan="1"> 0.32</td>
+  </tr>
+  <tr style="background-color:white;text-align:center;vertical-align:middle'">
+    <td colspan="1"> (021)</td>
+    <td colspan="1"> [100]</td> 
+    <td colspan="1"> -0.42</td>
+    <td colspan="1"> 0.5</td>
+    <td colspan="1"> cross-slip on (011)</td> 
+    <td colspan="1"> cross-slip on (011)</td>
+  </tr>
+  <tr style="background-color:white;text-align:center;vertical-align:middle'">
+    <td colspan="1"> (010)</td>
+    <td colspan="1"> [001]</td> 
+    <td colspan="1"> unstable</td>
+    <td colspan="1"> unstable</td>
+    <td colspan="2"> point defect domains</td> 
+  </tr>
+  <tr style="background-color:white;text-align:center;vertical-align:middle'">
+    <td colspan="1"> (101)</td>
+    <td colspan="1"> (10\(\bar{1}\))</td> 
+    <td colspan="1"> twin and slip</td>
+    <td colspan="1"> twin</td>
+    <td colspan="1"> -0.39</td> 
+    <td colspan="1"> 0.13</td>
+  </tr>
+  <tr style="background-color:white;text-align:center;vertical-align:middle'">
+    <td colspan="1"> (101)</td>
+    <td colspan="1"> [010]</td> 
+    <td colspan="1"> -0.26</td>
+    <td colspan="1"> 0.28</td>
+    <td colspan="1"> -0.12</td> 
+    <td colspan="1"> 0.11</td>
+  </tr>
+  <caption>Table 1. Slip systems in \(\beta\)-HMX and associated Peierls stresses.</caption>
+</table>
+
+Table 1 shows a broad range of phenomenology, beyond slip. Dislocations in some slip systems are not stable and cross-slip to other systems, or are entirely unstable and the lattice cleaves. `\((101)[10\bar{1}]\)` is twinning system. The systems for which a Peierls stress value can be computed, exhibit slip asymmetry: the critical stresses for motion in the two directions of given system are different. This is due to molecular packing.
+
+* A. Pal, R.C. Picu, Peierls-Nabarro stresses of dislocations in monoclinic cyclotetramethylene tetranitramine (`\(\beta\)`-HMX), *Modelling Simul. Mater. Sci. Eng.* Vol. 26, pp. 045005 (21pp), 2018
+
+## *Pressure sensitivity of plastic deformation*
+
+Under shock conditions, the pressure may increase to GPa levels; the pressure increases monotonically with the impact speed. Due to this reason, and because molecular crystals in general, and HMX in particular, are elastically soft, it is important to determine how the critical resolved shear stress for plastic deformation in specific systems depends on pressure. We performed this analysis using molecular models and concluded that pressure effects on slip must be taken into account when modeling plasticity under shock conditions. 
+
+Under high pressure, dislocation plasticity may be replaced by shear localization. This is due to the fact that the critical resolved shear stress increases significantly with increasing pressure, which brings the crystal close to its stability limit. In addition, fast moving dislocations have a tendency to destabilize the crystal. Figure 2 shows the variation of the critical resolved shear stress with the pressure for the `\((101)[010]\)`, which is the most mobile system in HMX (Table 1).
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+    <img src="energetic-materials-mechanics-under-extreme-conditions/figure2.png" class="img-responsive" alt="Figure 2" style="width:800px;height:350px;">
+    </div>
+</div>
+<figcaption>
+<b>Figure 2:</b> Critical resolved shear stress versus pressure for dislocations (Left: edge; Right: screw) in the \((101)[010]\) system of \(\beta\)-HMX. The white domain represents elastic states. The gray area corresponds to dislocation glide, while the pink area corresponds to shear localization. 
+</figcaption>
+</figure>
+
+* A. Pal, R.C. Picu, Non-Schmid effect of pressure on plastic deformation in molecular crystal HMX, *J. Appl. Phys.*, Vol. 125, pp. 215111, 2019
+
+
+## *Strain hardening in HMX*
+Strain hardening is typically due to the interaction of dislocations. Dislocations intersect as they move, form junctions and repulsive pairs, and this leads to locking. Continuation of plastic flow requires increasing the applied stress. 
+We studied hardening in HMX using line tension models calibrated based on atomistic simulation results. A large number of dislocation pairs on systems listed in Table 1 was considered and the strength of their junctions was evaluated. An homogenization procedure was used to predict hardening in the presence of junctions of all types.
+While strain hardening is not negligible in absolute value, the increment of the flow stress produced by the interaction of dislocations is small compared with the Peierls barrier (lattice friction). The study led to a quantitative evaluation of the hardening matrix (which may be used in crystal plasticity models). However, it was concluded that ignoring strain hardening would not lead to drastic errors in the prediction of dislocation-based plasticity.
+
+* M. Khan, R.C. Picu, Strain hardening in molecular crystal cyclotetramethylene tetranitramine (`\(\beta\)`-HMX): a theoretical evaluation, *Model. Simul. Mater. Sci. Eng.*, Vol. 29, pp. 075010, 2021.
+
+## *Viscosity of shear bands in HMX*
+Shear localization is prevalent in HMX due to its high lattice resistance, particularly under shock conditions. It turns out that under shock conditions and in the presence of crystal defects, dislocation plasticity is likely to be less important than localization-based plastic deformation (similar to slip line theory models of the early perfect plasticity). Therefore, it becomes critical to define the constitutive behavior of shear bands. To this end, we developed specialized models which led to a wealth of information about the physics and behavior of bands loaded at high strain rates. 
+
+Figure 3 shows the flow of a band under constant shear stress (after band nucleation from a pre-existing defects) and the temperature increase in the band due to viscous dissipation. 
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+    <img src="energetic-materials-mechanics-under-extreme-conditions/figure3.png" class="img-responsive" alt="Figure 3" style="width:800px;height:350px;">
+    </div>
+</div>
+<figcaption>
+<b>Figure 3:</b> Left: Stress-strain curve for the nucleation and subsequent flow of a shear band under imposed pressure and strain rate. Right: variation of the temperature in the band and at the boundary of the model. 
+</figcaption>
+</figure>
+
+Figure 4 shows the viscosity of the band function of the applied strain rate, at various pressures. The band exhibits shear thinning behavior (the viscosity decreases with increasing strain rate) which is independent of the pressure. Figure 4 also shows the variation of the viscosity with the temperature for p = 5 GPa. The temperature dependence if non-Arrhenius, as it is expected for a material in far non-equilibrium. Therefore, the effect of temperature on viscosity is weak. As with plastic deformation, the most important effect is that of pressure. 
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+    <img src="energetic-materials-mechanics-under-extreme-conditions/figure4.png" class="img-responsive" alt="Figure 4" style="width:800px;height:350px;">
+    </div>
+</div>
+<figcaption>
+<b>Figure 4:</b> Left: Variation of the viscosity in the shear band with the applied strain rate, at various pressures. Right: Variation of the viscosity in the shear band with temperature at various strain rates.  
+</figcaption>
+</figure>
+
+It was concluded that the variation of the viscosity in the shear band with pressure and temperature is compatible with the free volume theory used to describe the behavior of metallic glasses. The viscosity scales exponentially with the density of the material in the band. A constitutive equation for the band was proposed. 
+
+* M. Khan, R.C. Picu, Shear localization in molecular crystal HMX: constitutive behavior of the shear band, *J. Appl. Phys.*, Vol. 128, pp. 105902, 2020. 
+
+## *Atomistic-informed constitutive modeling of HMX*
+The results described above, obtained with models representing the physics at different scales, were captured in constitutive formulations which were then used to model HMX deformation. The physics captured in these models includes: the entire set of active slip systems, the yield stress, strain hardening and the pressure sensitivity of the yield stress. 
+
+Figure 5 shows a comparison of the indentation force-displacement curve predicted with various models (which include different components of the physics) and equivalent experimental curves. It demonstrates that the essential component of the physics that needs to be accounted for beyond the proper set of slip systems is the pressure sensitivity of yield, see Fig. 2.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+    <img src="energetic-materials-mechanics-under-extreme-conditions/figure5.png" class="img-responsive" alt="Figure 5" style="width:500px;height:400px;">
+    </div>
+</div>
+<figcaption>
+<b>Figure 5:</b> Experimental and simulated indentation force-displacement curves showing the importance of capturing in the constitutive model various component of the physics of plasticity. 
+</figcaption>
+</figure>
+
+* B. Paliwal, R.C. Picu, Nanoindentation in cyclotetramethylene tetranitramine (`\(\beta\)`-HMX) single crystals: the effect of pressure sensitivity, *Model. Simul. Mater. Sci. Eng.* Vol. 29, pp. 065004, 2021.
+* R. Ma, W.C. Sun and R.C. Picu, Atomistic-model informed pressure-sensitive crystal plasticity for crystalline HMX, *Int. J. Sol. Struct.* Vol. 232, pp. 111170, 2021
+
+
+# RDX
+
+## *Slip systems and Peierls stresses in RDX*
+
+As with HMX, the identification of the slip systems in `\(\alpha\)`-RDX (the stable phase of RDX in ambient conditions it the orthorhombic `\(\alpha\)` phase) is the essential first step when attempting to understand the physical basis of plasticity. We used atomistic simulations to identify the slip systems and compute the critical resolved shear stress required to move dislocations in each of these systems – the Peierls stress. Figure 6 shows a `\((100)\)` projection of the RDX crystal and the Peierls stress for each slip system.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+    <img src="energetic-materials-mechanics-under-extreme-conditions/figure6.png" class="img-responsive" alt="Figure 6a" style="width:800px;height:350px;">
+    </div>
+</div>
+<figcaption>
+<b>Figure 6:</b> Left: \((100)\) projection of the RDX crystal with a subset of the slip systems indicated. Right: Peierls stress for various slip systems; the plane is indicated by symbols and the direction of the Burgers vector is given by [ ]. “e” and “s” indicate edge and screw dislocations, respectively. 
+</figcaption>
+</figure>
+
+* N. Mathew, C. R. Picu, and P. W. Chung, “Peierls Stress of Dislocations in Molecular Crystal Cyclotrimethylene Trinitramine,” *The Journal of Physical Chemistry A*, vol. 117, no. 25, pp. 5326–5334, 2013. 
+* N. Mathew and R. C. Picu, “Slip asymmetry in the molecular crystal cyclotrimethylenetrinitramine,” *Chemical Physics Letters*, vol. 582, pp. 78–81, 2013
+
+## *Coarse grained models of RDX*
+Coarse-graining is a process by which an existing model is extended to operate on larger spatiotemporal scales by a reduction of the set of degrees of freedom (DOF) of the system. In a more restrictive sense, coarse-graining refers to models in which an entire group of atoms is represented by an effective particle. This can be applied at the sub-molecular level, where a group of atoms within a molecule is represented as a bead (united atom), or at the supra-molecular level, where one or multiple molecules are represented by a supra-molecular “bead.” Coarse graining of this type is most successfully applied to situations in which spatiotemporal scale separation exists. In dense phases, this condition is generally not fulfilled. 
+
+The symmetry of the crystal poses limitations on the shape and nature of the coarse grained particles and potentials, as they may not be able to accurately reproduce the space group and hence the packing of the condensed phase. Furthermore, a clear separation of frequencies between the coarsened DOF and atomic DOF may not exist. This is especially true for energetic molecular crystals, such as cyclotrimethylene trinitramine (`\(\alpha\)`-RDX), as the lattice modes are coupled to the wagging of the nitro-groups (intra-molecular vibrations) and the distortion of the heterocyclic ring, and hence taking the most obvious coarsening step, i.e. representing a molecule by a bead or a set of beads may not be ideal.
+
+We explore several potential coarse grained models for the molecular crystal cyclotrimethylene trinitramine (RDX) in the α phase. In particular, we investigate the effect of removing the flexibility of the molecule on various crystal-scale parameters such as the elastic constants, the lattice parameters, the thermal expansion coefficients, the stacking fault energy and the critical stress for the motion of a dislocation (the Peierls-Nabarro stress). To this end, a family of models is developed, with increasing levels of coarse graining and correspondingly decreasing levels of molecular flexibility.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+    <img src="energetic-materials-mechanics-under-extreme-conditions/figure7.png" class="img-responsive" alt="Figure 7">
+    </div>
+</div>
+<figcaption>
+<b>Figure 7:</b> Schematic representation of the models used in this study. The full RDX molecule is shown in the upper left panel, with C atoms shown in black, N in blue, O in red and H silver. Model I is fully flexible (gray indicates ‘flexible’) while Model V is a fully rigid body (red indicates ‘rigid’). In Model II, the triazine ring and the CH2 groups are fully flexible, while the NO2 groups are rigid bodies connected to the ring via inextensible N-N bonds (thin red lines). The nitro groups are free to rotate about the N-N bond. Model III preserves all features of Model II and, in addition, the length of the bonds of the ring is constrained. The ring is deforming via dihedral/angle motions in this model. Model IV is similar to Model III except that now the triazine ring and the CH2 groups belong to a single rigid body. Model V is fully rigid. 
+</figcaption>
+</figure>
+
+It is concluded that Models II and III provide reasonably accurate predictions of the elastic constants, lattice parameters and their dependence on pressure, and of the thermal expansion coefficients. Therefore, these models are acceptable as long as crystals with no defects are considered. The model in which the flexibility of the molecule is entirely removed, Model V, leads to large errors even for perfect crystals. The evaluation of the Peierls stress and the stacking fault energy with all coarse grained models considered here leads to large errors. It results that no coarse grained model considered here captures accurately the motion of dislocations, which is the physical basis of plasticity.
+
+* A. Pal, R.C. Picu, Contribution of molecular flexibility on the elastic-plastic properties of molecular crystal `\(\alpha\)`-RDX, *Model. Simul. Mater. Sci. Eng.*, Vol. 25, p. 015006(1-17), 2017

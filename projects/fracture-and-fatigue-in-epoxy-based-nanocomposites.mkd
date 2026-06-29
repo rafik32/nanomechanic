@@ -1,0 +1,147 @@
+---
+layout: project
+title: Fracture and Fatigue in Epoxy-Based Nanocomposites
+sponsors:
+    - name: National Science Foundation
+      link: http://www.nsf.gov
+      note: >
+             <h4>Award Number: CMMI-0900188</h4>
+             <small>Any opinions, findings, and conclusions or recommendations 
+             expressed in this material are those of the author(s) and do not 
+             necessarily reflect the views of the National Science Foundation</small>
+    - name: Office of Naval Research
+      link: http://www.onr.navy.mil/
+      note: >
+             <h4>Award Number: N00014-09-1-0928</h4>
+             <small>Any opinions, findings, and conclusions or recommendations 
+             expressed in this material are those of the author(s) and do not 
+             necessarily reflect the views of the Office of Naval Research</small>
+faculty:
+    - name: Catalin Picu
+      title: Professor
+    - name: Nikhil Koratkar
+      title: Professor
+students:
+    - name: Wei Zhang
+      title: Graduate Research Assistant
+    - name: Ardavan Zandiatashbar
+      title: Graduate Research Assistant
+toc: true
+---
+# Introduction
+Thermosetting polymers (e.g. epoxy systems) are being used by industry in paints, coatings, adhesives, industrial tooling, and composites, as well as in the semi-conductor and electronic packaging industries. These find applications in electronics, aerospace vehicles, civil infrastructure, and energy harvesting (e.g. wind turbine blades). The applications could directly or indirectly lead us to a greener, cleaner, and safer world.
+
+Using thermosetting polymers, however, has its limitations. These limitations stem from the brittle failure, low toughness, excessive creep at high loads or temperatures, and poor resistance to fatigue of epoxies. These deficiencies were addressed in many studies. For example, toughness in thermosetting polymers was enhanced by the addition of rubber fillers and plasticizers. However, these fillers decrease the stiffness of the composite and lower its glass transition temperature.
+
+The macroscopic behavior of the epoxy system depends on its molecular network architecture (e.g. cross-link density). In this project, the macroscopic mechanical behavior of epoxy systems was tuned by nano-engineering; specifically, by introducing novel carbon nanofillers in the form of 1D (Carbon nano-tubes (CNT)) or 2D (Graphene platelets (GPL)) phases in the polymeric matrix. The size and quality of dispersion of the second phases are important parameters controlling the mechanics of these composites.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+    <img src="fracture-and-fatigue-in-epoxy-based-nanocomposites/figure1.png" class="img-responsive" alt="Figure 1">
+    </div>
+</div>
+<figcaption>
+<b>Figure 1:</b>  Example of epoxy application in the aerospace industry: Replacing the Sikorsky S-61 original metal blades with Carson Composite Main rotor blades increased its carry load by an additional 1,800 pounds, the velocity of the helicopter by 17 mph, and the travel range by 70 miles at same fuel consumption. (Image courtesy: Marek Wozniak).
+</figcaption>
+</figure>
+
+<figure>
+<div class="row">
+     <div class="col-md-12">
+    <img src="fracture-and-fatigue-in-epoxy-based-nanocomposites/figure2.png" class="img-responsive" alt="Figure 2">
+    </div>
+</div>
+<figcaption>
+<b>Figure 2:</b>  Example of epoxy application in civil infrastructure: the creep of epoxy adhesive was blamed for the Big Dig tunnel collapse in Boston, MA, in 2006. (Image courtesy: The Boston Globe, NTSB's report on Big Dig tunnel collapse)
+</figcaption>
+</figure>
+
+# Results to Date
+
+## Fatigue, fracture, and crazing in nanocomposites
+By addition of Carbon nanotube fillers to epoxy system, the fracture behavior of thermosetting polymers is fundamentally altered by promoting crazing. Such an approach can significantly enhance the toughness of thermosetting polymers without incurring adverse effects such as loss of Young's modulus or strength. Significant improvement in fracture toughness and fatigue crack growth rate in epoxies reinforced with carbon nanotubes was observed. Typical results for fatigue crack propagation (i.e. crack propagation rate vs. stress intensity factor amplitude) are shown in Fig. 3 for the baseline epoxy, epoxy with 0.25% weight pristine multiwall carbon nanotubes (MWNT) and epoxy with 0.25% weight amine-functionalized MWNT (A-MWNT).
+
+<figure>
+<div class="row">
+     <div class="col-md-12">
+    <img src="fracture-and-fatigue-in-epoxy-based-nanocomposites/figure3.png" class="img-responsive" alt="Figure 3">
+    </div>
+</div>
+<figcaption>
+<b>Figure 3:</b>  Crack growth rate plotted as a function of the stress intensity factor amplitude (ΔK). The amine-functionalized multiwall nanotubes (A-MWNT) sample shows a significant reduction (over 10-fold reduction) of crack growth rates compared to the MWNT/Epoxy sample and the pure epoxy sample.
+</figcaption>
+</figure>
+
+Microscopy and modeling indicated that crack bridging by MWNT is responsible for the toughening observed at low applied stress intensity factors. The toughening observed in the A-MWNT sample is attributed to a change of the local material behavior of the epoxy. Surprisingly, crazes connecting the two crack faces are observed in these samples. Crazing is generally not observed in thermosetting polymers such as epoxies due to the very high cross-link density of the epoxy chains which inhibits fibril formation. Figure 4 shows a side view close to the crack tip. Probing indicated that these ligaments are epoxy and not MWNT. Therefore, it appears that improving the cohesion of the fillers to the matrix (via functionalization) leads to substantial modification of the mechanical behavior of the epoxy on the nanoscale. This reflects in the macroscopic mechanical behavior as the toughening observed in Fig. 3.
+
+<figure>
+<div class="row">
+     <div class="col-md-12">
+    <img src="fracture-and-fatigue-in-epoxy-based-nanocomposites/figure4.png" class="img-responsive" alt="Figure 4">
+    </div>
+</div>
+<figcaption>
+<b>Figure 4:</b>  Crazes in filled epoxy close to a crack tip. The tip is on the left and the crazes connect the upper (top) and lower (bottom) faces of the crack.
+</figcaption>
+</figure>
+
+## Thin film nanocomposites
+To be able to mechanically probe the second phases, the epoxy and epoxy-GPL nanocomposites were prepared in form of thin films on silicon substrates by spin coating. This offers the advantage that the dispersed nanofillers are easy to locate in the transparent matrix, using optical and atomic force microscopy (AFM), see Figure 5. These protrusions were probed by nanoindentation and subjected to cyclic loading. The epoxy base was also probed away from inclusions. This analysis led to the conclusion that the fillers stick well to the matrix.
+
+<figure>
+<div class="row">
+     <div class="col-md-12">
+    <img src="fracture-and-fatigue-in-epoxy-based-nanocomposites/figure5.png" class="img-responsive" alt="Figure 5">
+    </div>
+</div>
+<figcaption>
+<b>Figure 5:</b>  An AFM 3D map of a GPL cluster protruding out of the upper surface of nanocomposite thin film. 
+</figcaption>
+</figure>
+
+<figure>
+<div class="row">
+     <div class="col-md-12">
+    <img src="fracture-and-fatigue-in-epoxy-based-nanocomposites/figure6.png" class="img-responsive" alt="Figure 6">
+    </div>
+</div>
+<figcaption>
+<b>Figure 6:</b> Nanoindentation load-displacement curves for indentationsfar and close to the protrusions. The inset shows an optical microscopy image showing the location of indents. 
+</figcaption>
+</figure>
+
+## Creep (time-dependent) behavior in nanocomposites
+The addition of graphene platelets (GPL) as the second phase, to the epoxy had an effect on the creep response at high loads and high temperatures. The creep rate is significantly reduced at higher loads and higher temperatures, while no such reduction is observed at lower loads. The steady state creep response can be approximated with
+
+`\[\varepsilon(t) \sim t^{1/q}\]`
+
+This type of power function is usually interpreted as a manifestation of hierarchical relaxation processes taking place in the material. This observation is important as the reduction of the creep rate due to GPL happens in conditions in which creep resistance is more critical, i.e. at high temperatures. Figure 5 shows the creep response of the two materials at three different temperatures.
+
+<figure>
+<div class="row">
+     <div class="col-md-12">
+    <img src="fracture-and-fatigue-in-epoxy-based-nanocomposites/figure7.png" class="img-responsive" alt="Figure 7">
+    </div>
+</div>
+<figcaption>
+<b>Figure 7:</b> Creep strain versus time for neat epoxy and epoxy-0.1wt% GPL at stress level of 20 MPa and temperatures of 23, 40, and 55˚C. Tests were performed at 20 MPa. 
+</figcaption>
+</figure>
+
+To investigate the local creep response a flat punch (50 μm in diameter) indenter was utilized. In agreement to macroscopic behavior, nanocomposite shows less creep in the nanoscale mechanical probation. The indentation displacement can be related to the creep compliance of the viscoelastic material. Hence, this nanoscale test allows identifying a material property which is usually accessible only in macroscopic uniaxial tests. It is interesting to observe that the initial creep response of the composite and the pristine epoxy are identical.
+
+<figure>
+<div class="row">
+     <div class="col-md-12">
+    <img src="fracture-and-fatigue-in-epoxy-based-nanocomposites/figure8.png" class="img-responsive" alt="Figure 8">
+    </div>
+</div>
+<figcaption>
+<b>Figure 8:</b> Nanoindentation creep data obtained with a 50-μm diameter flat punch. The creep displacement vs. time curves obtained with the flat punch can be approximated with a power law (inset).
+</figcaption>
+</figure>
+
+
+# Related Publications
+{% bibliography --file fracture-and-fatigue-epoxy-nanocomposites %}

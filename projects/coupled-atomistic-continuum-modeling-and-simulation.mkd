@@ -1,0 +1,144 @@
+---
+layout: project
+title: Coupled Atomistic Continuum Modeling and Simulation
+sponsors:
+    - name: Rensselaer Polytechnic Institute
+      link: http://www.rpi.edu
+    - name: Army Research Lab
+      link: http://www.arl.army.mil
+    - name: Simmetrix Inc.
+      link: http://www.simmetrix.com/
+faculty:
+    - name: Catalin Picu
+      title: Professor
+    - name: M. S. Shephard
+      title: Professor, Scientific Computation Research Center
+students:
+    - name: Nithin Mathew
+    - name: Dybiendu Datta
+    - name: Mohan Nuggehaly
+    - name: Ben Franzdale
+toc: true
+---
+# Introduction
+Most physical problems of interest are of a multiscale nature. The behavior observed at the system scale depends on phenomena taking place on multiple spatial and temporal scales. For example, deformation of metals which is usually described at the macroscale by continuum plasticity, is governed by the deformation of individual grains, which is controlled by the nucleation, multiplication and interaction of dislocations. 
+
+Modeling such phenomena is notoriously difficult due to the large range of spatial and temporal scales involved. There are two broad classes of multiscale methods: sequential and concurrent. In sequential methods, a physical process is modeled on given scale and the net, averaged behavior is sought. This response is input into another model that describes the physics on the immediately superior scale. Obviously, this approach is applicable when "relevant scales" can be clearly identified. The other alternative is to use multiple models concurrently, i.e. to divide the problem domain in sub-domains over which different models are used. 
+
+The technologies developed in this program are of the concurrent type and are focused on coupling discrete (atomistic) and continuum models. This coupling is challenging due to the fundamental differences between the two types of models. Discrete models are non-local and their potential function is non-convex. Continuum models are governed by a convex potential, and may be linear or non-linear, local or non-local. The advantage of the discrete models is that they allow "damage" to occur naturally due to the non-convex nature of the potential. Continuum models cannot account for such effects (e.g. crack nucleation and propagation, dislocation nucleation etc). In the continuum, defects have to be included by the modeler. 
+
+In this project we develop a coupled atomistic-continuum method applicable at zero Kelvin (AtC) as well as at finite temperatures (AtCT). The main idea is to use atomistic analysis only at places where needed (large strain gradients) and continuum analysis elsewhere, for efficiency.
+
+# Results
+## Athermal Model (Coupled Molecular Statics-Continuum)
+The method is based on the adaptive selection of models from a model hierarchy. Three models are currently used: an atomistic model (molecular statics), a linear elastic and a non-linear elastic continua. The atomistic model is the most accurate in the hierarchy and is used as reference. The constitutive behavior of the two continua is calibrated based on the atomistic model. 
+ 
+The models are selected form the set based on error indicators developed for this purpose. The error indicator used to identify the transition from non-local continuum to atomistics is developed starting from a recently proposed criterion for dislocation nucleation developed by Miller and Acharya. The error indicator used to discriminate between the linear and the non-linear continua is based on comparing strain energies predicted using the two models. 
+
+At any given time, the error indicators are used to partition the problem domain in regions to be represented by the three models. The boundary between the two continuum models requires no special treatment. The boundary between the non-linear elasticity model and the atomistic model needs special attention. At this boundary one defines a buffer region in which the two models are superimposed. The solution is obtained by imposing the force equilibrium everywhere in the problem domain, or, equivalently, by minimizing the residual. In the buffer region the residual is computed as a weighted sum of the atomistic and continuum residuals. In addition, the compatibility of displacements between the two models in the buffer region is imposed in a mean sense (in average, over each continuum element in the buffer).
+
+The method has been extensively verified against fully atomistic models. It was shown that it passes the patch test. It is fully 3D and is implemented in an parallel computing environment. 
+
+Few examples are shown below.
+
+###  Nanoindentation
+Figure 1 shows the simulation of nanoindentation using a square punch. The punch is represented by light blue. The other colors represent sub-domains corresponding to the three models used. The red represents the atomistic region, green is the buffer and dark blue shows the non-linear elastic continuum. The rest of the model is linear elastic. The model on the right uses only two models (atomistic and linear elastic). One can see that the atomistic region is larger in this case.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+        <img src="coupled-atomistic-continuum-modeling-and-simulation/figure1.png" class="img-responsive" alt="Figure 1">
+    </div>
+</div>
+<figcaption>
+<b>Figure 1:</b> Concurrent model configuration during loading of a slab with a rectangular nanoindenter (light blue region). See description of the colors in text.
+</figcaption>
+</figure>
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+        <img src="coupled-atomistic-continuum-modeling-and-simulation/figure2.jpg" class="img-responsive" alt="Figure 2">
+    </div>
+</div>
+<figcaption>
+<b>Figure 1:</b> Comparison of the strain energy variation during indentation evaluated with the coupled method and with a fully atomistic model (reference).
+</figcaption>
+</figure>
+
+###  Cavitation
+Figure 2 shows the total model strain energy computed with the coupled model (3 member hierarchy) along with the same measure evaluated from a fully atomistic model. The agreement is very good. The drops correspond to the nucleation of dislocations from the edges of the indenter.
+
+In the next model we represent the evolution of a void in a large block of material (Al) subjected to hydrostatic loading. Dislocations nucleate from the surface of the void and evolve in the surrounding material. Initially, several loops nucleate in a symmetric fashion (due to the underlying symmetry of the crystal) and interact forming a stacking fault tetrahedron around the void. This structure is quite stable against further nucleation of dislocations from the void (which leads to void growth). However, upon applying sufficiently large load, the tetrahedron is destroyed and a more complicated dislocation structure forms. The next few figures show the initial nucleation stage, the stacking fault tetrahedron and the debris left in the model after full unloading. As before, colors represent sub-domains in which various models (as indicated) are adaptively selected.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+        <img src="coupled-atomistic-continuum-modeling-and-simulation/figure3.png" class="img-responsive" alt="Figure 3">
+    </div>
+</div>
+<figcaption>
+<b>Figure 3:</b> Various stages in the growth of a void subjected to hydrostatic loading by dislcoation nucleation.
+</figcaption>
+</figure>
+
+###  Nanoporous material
+A nanoporous material was also considered and subjected to hydrostatic tensile loading. Figure 4 shows the dislocation structure evolving in the neighborhood of 4 voids located relatively close to each other.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+        <img src="coupled-atomistic-continuum-modeling-and-simulation/figure4.jpg" class="img-responsive" alt="Figure 4">
+    </div>
+</div>
+<figcaption>
+<b>Figure 4:</b> Evolution of dislocations in the vicinity of four voids in a nanoporous metal (Al).
+</figcaption>
+</figure>
+
+## Finite Temperature Model (coupled Molecular Dynamics-Continuum)
+ Coupling discrete and continuum models at finite temperatures is more challenging. While continuum models use different differential equations for conservation of momentum and for transport (mass or heat), these are not decoupled when the discrete view is taken. Particle motion is the only physics in atomistic models. Coupling can be introduced in a semi-heuristic way in continuum models, but this requires additional constitutive relations. This fundamental discrepancy poses serious challenges to any attempt to concurrently couple such models. Furthermore, continuum models use convex potentials and the concept of dissipation to represent plastic deformation. They are usually local, although non-local forms of the constitutive equations can be used. Discrete models have non-convex potentials with multiple local minima and are intrinsically non-local.
+
+In this work we develop a method to couple discrete (atomistic) and continuum models at finite temperatures which, for computational efficiency, uses standard wave and heat equations in the continuum. A specially designed interface region couples the two models. A procedure is devised to separate the total kinetic energy of the discrete model in two parts, which are treated as mechanical and thermal energy in the continuum. Full, bi-directional mechanical and thermal coupling is demonstrated in 1D.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+        <img src="coupled-atomistic-continuum-modeling-and-simulation/figure5.png" class="img-responsive" alt="Figure 5">
+    </div>
+</div>
+<figcaption>
+<b>Figure 5</b>
+</figcaption>
+</figure>
+
+ The figure shows a 1D model in which the left side is discrete (A) and the right if continuum (C). The continuum model has a mechanical and a thermal component which are not coupled (energy is not transferred from one component to the other). The interface is composed of the three domains R+F, C(A) and A(C). Domains A(C) and C(A) provide mechanical coupling (long wavelengths) and function similar to the interface of the athermal, zero Kelvin, model. Domain R+F divides the phonon spectrum into long and short wavelength components which are transmitted to the continuum model as mechanical and thermal energy, respectively. It also preserves the thermal equilibrium of A if no external perturbation is applied.
+
+The next figure shows the behavior of the interface (R+F) in thermodynamic equilibrium. The temperature is kept constant in time, while the coupling flux flowing between the thermal component of the continuum and A, `\(j_C\)`, oscillates about zero.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+        <img src="coupled-atomistic-continuum-modeling-and-simulation/figure6.png" class="img-responsive" alt="Figure 6">
+    </div>
+</div>
+<figcaption>
+<b>Figure 6</b>
+</figcaption>
+</figure>
+
+If a temperature differential is applied across the model, the temperature gradient becomes constant, as expected. This is shown in the next figure and demonstrates that the coupled method works properly. The green line shows results obtained from the coupled AtCT, while the brown line represents results obtained with a fully discrete model.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+        <img src="coupled-atomistic-continuum-modeling-and-simulation/figure7.png" class="img-responsive" alt="Figure 7">
+    </div>
+</div>
+<figcaption>
+<b>Figure 7</b>
+</figcaption>
+</figure>
+
+# Publications
+{% bibliography --file Multiscale Modeling - Concurrent Atomistic-Continuum Methods %}

@@ -1,0 +1,54 @@
+---
+layout: page
+title: Links/Resources
+group: navigation
+nav_weight: 4
+toc: true
+---
+
+### Groups Working on Dislocation Nucleation
++ Ting Zhu ([link](http://www.zhugroup.gatech.edu/))
++ Satoshi Izumi ([link](http://www.fml.t.u-tokyo.ac.jp/index.html))
++ Ron Miller ([link](http://carleton.ca/nanomechanics/))
+
+### Groups Working on Energetic Materials
++ Sylke Boyd ([link](http://facultypages.morris.umn.edu/~sboyd/))
++ Thomas Sewell ([link](http://chemistry.missouri.edu/people/sewell.html))
++ Dana Dlott ([link](http://dlottgroup.scs.uiuc.edu/group/))
+
+### Molecular Crystals
++ Graeme Day at Cambridge ([link](http://www-day.ch.cam.ac.uk/))
++ Institute of Pharmaceutical Innovation ([link](http://www.ipi.ac.uk/research/molecular-and-solid-state-modelling-group/))
++ Marisol Koslowski ([link](https://engineering.purdue.edu/~marisol/Home.html))
+
+### Material Properties
++ Material properties and suppliers ([link](http://www.matweb.com/))
++ Crystal lattice structures ([link](http://cst-www.nrl.navy.mil/lattice))
+
+### Phase Diagrams ([link](http://www.crct.polymtl.ca/fact/Documentation/SGTE/SGTE_Figs.htm))
+
+### Journals
++ RPI Library ([link](http://www.lib.rpi.edu/))
++ APS Research Journals ([link](http://publish.aps.org/))
++ IOP Electronic Journals ([link]())
++ Science Magazine ([link](http://www.scienceonline.org/))
++ Nature Magazine ([link](http://www.nature.com/))
++ Virtual Journal of Nanoscale Science and Technology ([link](http://www.vjnano.org/nano/?jsessionid=115808993409748866))
+
+### Embedded Atom Interatomic Potentials
++ Y. Mishin et al ([link](http://cst-www.nrl.navy.mil/ccm6/ap))
++ F. Ercolessi's Home Page ([link](http://www.fisica.uniud.it/~ercolessi/potentials/))
+
+### Research Groups
++ J. Adams Group Home Page at Arizona State University ([link](http://engineering.asu.edu/people/47038))
++ F. Ercolessi's Home Page ([link](http://www.fisica.uniud.it/~ercolessi/potentials/))
++ E. Kaxiras' Group Home Page at Harvard ([link](http://www.seas.harvard.edu/ekaxiras/index.html))
++ S. Yip's Group Home Page at MIT ([link](http://web.mit.edu/nse/people/faculty/yip.html))
++ Materials and Process Simulation Center at CalTech ([link](http://www.wag.caltech.edu/))
++ H. Zbib's Group Home Page at Washington State University ([link](http://www.cmm.wsu.edu/))
++ The Center for Simulations at Technical University of Denmark ([link](http://www.fysik.dtu.dk/))
++ Micromechanics Laboratory at Brown University ([link](http://www.brown.edu/Departments/Engineering/Labs/Nanomicro/))
+
+### Discrete Dislocation Dynamics Simulations
++ 3D Discrete Dislocation Simulation ([link](http://zig.onera.fr/mm_home_page/index.html))
++ H. Zbib's Group Home Page at Washington State University ([link](http://www.cmm.wsu.edu/))

@@ -1,0 +1,72 @@
+title: Computational Nanomechanics
+#folder where css and everything is stored
+baseurl: "/nanomechanics"
+assets:
+tagline:
+url: http://scorec.rpi.edu/
+author:
+  name: Catalin Picu
+  email: picuc@rpi.edu
+  phone: >
+  address: >
+
+maintainer:
+  name: Jacob Merson
+  website: http://www.jacobmerson.com
+  email: mersoj@rpi.edu
+
+highlighter: pygments
+#markdown: redcarpet
+redcarpet:
+ extensions: ["strikethrough", "tables", "superscript"]
+encoding: utf-8
+
+
+analytics :
+    provider : google
+    google :
+        tracking_id : 'UA-48100105-2'
+        site_name: 'nanomechanics'
+plugins: 
+    - 'jekyll/scholar'
+    - 'jekyll-redirect-from'
+scholar:
+  style: ieee
+  locale: en
+
+  sort_by: date
+  order: descending
+
+  source: ./_bibliography
+  bibliography: Nanomechanics (Group Website).bib
+  bibliography_template: reference
+
+  replace_strings: true
+  join_strings:    true
+
+  use_raw_bibtex_entry: false
+
+  details_dir:    bibliography
+  details_layout: bibtex.html
+  details_link:   Details
+
+  query: "@*"
+
+exclude: ["CNAME", "*.zip", "Gemfile", "Gemfile.lock", "README.md"]
+
+defaults:
+    -
+        scope:
+            path: ""
+            type: "pages"
+        values:
+            toc: true
+        scope:
+            path: ""
+            type: "projects"
+        values:
+            toc: true
+collections:
+    projects:
+        output: true
+        permalink: /projects/:path.html

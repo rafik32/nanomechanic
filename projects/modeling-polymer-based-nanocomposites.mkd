@@ -1,0 +1,226 @@
+---
+layout: project
+title: Modeling Polymer Based Nanocomposites
+sponsors:
+    - name: Office of Naval Research
+      link: http://www.onr.navy.mil/
+      note: >
+             <h4> Award Number: N00014-01-1-0732 </h4>
+             <small>Any opinions, findings, and conclusions or recommendations 
+             expressed in this material are those of the author(s) and do not 
+             necessarily reflect the views of the Office of Naval Research</small>
+faculty:
+    - name: Catalin Picu
+      title: Professor
+    - name: Rahmi Ozisik
+      title: Assistant Professor
+    - name: Linda S. Schadler
+      title: Professor, Department of Materials Science &amp Engineering
+    - name: Sanford S. Sternstein
+      title: Professor, Department of Materials Science &amp Engineering
+    - name: Pawel Keblinski
+      title: Professor, Department of Materials Science &amp Engineering
+
+students:
+    - name: Murat S. Ozmusul 
+      title: Graduate Research Assistant
+    - name: Alireza S. Sarvestani
+      title: Graduate Research Assistant
+    - name: Peter Dionne
+      title: Graduate Research Assistant
+    - name: Abhik Rakshit
+      title: Graduate Research Assistant
+toc: true
+---
+# Summary
+Polymers filled with nano-particles have mechanical, optical, dielectric and transport properties, which are significantly different from those of the equivalent system filled with micron-sized particles at the same volume fraction. Mechanical properties are improved significantly, with marked increases in both strength and ductility. Such gains are however observed only for certain ranges of filler size and volume fraction, and are highly dependent on material processing. Hence, these systems are of great promise and high current interest.
+
+The goal of this project is to investigate the deformation mechanisms that lead to improved mechanical and dielectric properties of polymer-based nano-composites, and to provide guidelines for material processing optimization. The main approach is computational. We develop multiscale models which encompass atomic, molecular and continuum scales. The discrete models are used to provide input for continuum constitutive laws and to investigate the deformation mechanisms, such as the role of the structure of the polymer-filler interfaces. Results of the discrete models are compared with experimental data obtained by SANS and SAXS. Continuum models are used to study deformation over larger scales and related mechanisms, such as the role of nanoparticle clustering. These models are validated based on results from laboratory scale rheological studies.
+
+# Approach
+The modeling strategy represented in the Figure 1 encompasses all relevant scales, with discrete and continuum modeling methods being used at the atomic and molecular, and continuum scales, respectively. A transition scale is selected, above which the system is represented by continuum models. At the molecular scale, a representative volume element (RVE) of the material containing spherical nanofillers is considered. Here we study the structure of the polymeric melt close to isolated filler surfaces and confined between fillers that are very close to each other. The confined polymer properties are different than those in the unfilled bulk; we investigate the relaxation spectrum.
+
+We then use this information to develop constitutive models for the filled melt. These models are implemented in continuum models of flow which are then solved with commercial codes (Fluent).
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+        <img src="modeling-polymer-based-nanocomposites/figure1.jpg" class="img-responsive" alt="Figure 1">
+    </div>
+</div>
+<figcaption>
+<b>Figure 1:</b> Physical system hierarchy and modeling strategy for nano-structured composites.
+</figcaption>
+</figure>
+<figure>
+<div class="row">
+    <div class="col-md-12">
+        <img src="modeling-polymer-based-nanocomposites/figure2.jpg" class="img-responsive" alt="Figure 2">
+    </div>
+</div>
+<figcaption>
+<b>Figure 2:</b> Monte Carlo simulation cell.
+</figcaption>
+</figure>
+
+# Results
+
+## The Structure of Polymeric Chains in the Vicinity of Nanoparticle Fillers in Polymer Based Nanocomposites
+The structure of linear chains located close to a spherical impenetrable surface was studied in a dense polymer system by means of lattice Monte Carlo simulations. It was found that, in a broad sense, the structure is controlled by the competition between the chain configurational entropy and the energetics in the vicinity of the surface. 
+
+The following observations are made:
+
+On the **monomer** scale:
+
+* Density fluctuations exist close to the wall. These fluctuations (the high density peaks) contribute to the slowing down of dynamics of chains that enter this region.
+
+* Bond and segment preferential orientation in the direction parallel to the wall is observed on all scales.
+
+On the **chain** scale:
+
+* Chains are not distorted as their center of mass approaches the filler. The figure below shows the length of the three semi-axes of the chain ellipsoid as a function of distance from the wall to the chain center of mass. Fillers of various radii (R), with attractive and purely repulsive interactions with the polymer (energetic and entropic) are considered. The chain length is N = 100 repeat units.
+
+* Chains rotate with their large semi-axis in the direction tangential to the spherical filler, a "docking transition." This is shown in the figure below. represents the degree of orientation relative to the normal to the wall. No preferential orientation gives =0. Negative represents orientation of the ellipsoid with the large semi-axis in the tangential direction.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+        <img src="modeling-polymer-based-nanocomposites/figure3.bmp" class="img-responsive" alt="Figure 3">
+    </div>
+</div>
+<figcaption>
+<b>Figure 3</b>
+</figcaption>
+</figure>
+<figure>
+<div class="row">
+    <div class="col-md-12">
+        <img src="modeling-polymer-based-nanocomposites/figure4.bmp" class="img-responsive" alt="Figure 4">
+    </div>
+</div>
+<figcaption>
+<b>Figure 4</b>
+</figcaption>
+</figure>
+
+### Chain-Filler Super-Structures
+If the fillers are sufficiently close to each other, polymer chains may form bridges between neighboring nanoparticles. The chains that are in contact with only one filler form dangling segments; these form a polydisperse brush on the surface of each filler. If the polymer-filler attachment points are permanent, the brush is also permanent. In nanocomposites, in most instances, the attachment points are temporary (form and re-form dynamically). The figure below shows a sketch of this structure.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+        <img src="modeling-polymer-based-nanocomposites/figure5.bmp" class="img-responsive" alt="Figure 5">
+    </div>
+</div>
+<figcaption>
+<b>Figure 5</b>
+</figcaption>
+</figure>
+
+By looking at the statistics of these segments we observe that:
+
+* Bridging chains form only if the minimum wall-wall distance is smaller than 2.5 times the gyration radius of the chains, Rg.
+* The dangling segments are heavily poly-disperse; their length distribution is weakly dependent on the wall-wall distance between fillers.
+* Loops are short and probably not significantly entangled.
+* This structure has little to do with the degree of attraction between polymer and fillers.
+
+### Polymer Dynamics
+Geometric confinement and the attractive interactions between polymers and nanoparticles lead to significant slowing down of chain dynamics (more sluggish relaxation).
+
+This is observed in the Rouse modes shown below. It is observed that:
+
+* If the polymer-filler interaction is neutral (polymer interacts energetically with the filler in the same way as it interacts with other polymers), slowdown is observed when the wall-wall distance is smaller than 1.2 Rg. This purely geometric confinement effect is shown in the left figure.
+
+* If the wall-wall distance is kept constant and the interaction is made more and more attractive, slowdown is observed, but it becomes significant only when the attraction is 3-5 times more intense than between polymers.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+        <img src="modeling-polymer-based-nanocomposites/figure6.bmp" class="img-responsive" alt="Figure 6">
+    </div>
+</div>
+<figcaption>
+<b>Figure 6</b>
+</figcaption>
+</figure>
+
+
+The slowdown is also observed in the mean square displacement (MSD) of the chains. In the figure below we show molecular dynamics results for the neat polymer and for the polymer filled with weakly attractive fillers. The three curves correspond to the MSD of the beads in the global coordinate system (g1) and in a local coordinate system tied to the chain center of mass (g2), and of the chain centers of mass (g3). Increasing the level of attraction (w) leads to more pronounced slowdown.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+        <img src="modeling-polymer-based-nanocomposites/figure7.bmp" class="img-responsive" alt="Figure 7">
+    </div>
+</div>
+<figcaption>
+<b>Figure 7</b>
+</figcaption>
+</figure>
+
+### Lifetime of Polymer-Filler Contacts
+The lifetime of polymer-filler contact points depends on how attractive the wall is and on the dynamics of the chains in the neighborhood of the surface. The dynamics of attachment-detachment is well described by the Rouse model up to times comparable with the longest Rouse time. The figure below shows the mean of the attachment time (normalized by the longest Rouse time of the respective chain) versus the parameter w which represents how much stronger the polymer-filler attraction is compared to the polymer-polymer attractions.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+        <img src="modeling-polymer-based-nanocomposites/figure8.png" class="img-responsive" alt="Figure 8">
+    </div>
+</div>
+<figcaption>
+<b>Figure 8</b>
+</figcaption>
+</figure>
+
+
+### Dynamics of Free Chains
+ It is obvious that the dynamics of the chains that come in contact with the filler should be slower than that of the chains in the neat melt (both due to attachment and to the presence of denser layers of fluid close to the wall). What can be said about the dynamics of chains that are not in contact with the filler surface and do not penetrate the region of density fluctuations next to the wall?
+
+
+It turns out that the parameter w (representing how much stronger the polymer-filler attraction is compared to the polymer-polymer attraction) controls the dynamics of the free chains even though it is just a filler surface-related parameter. This takes place because increasing the attraction to the filler surface perturbs the structure of the brush of dangling segments around the filler. A denser brush accommodates less free chains within its volume and hence the free chain dynamics is comparable to that in the neat bulk. A less dense brush allows some free chains to penetrate it and these free chains are significantly slowed down. 
+
+
+The figure below shows MSD curves corresponding to systems with same type of brush, but with different w. the effect on the dynamics is non-monotonic!
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+        <img src="modeling-polymer-based-nanocomposites/figure9.bmp" class="img-responsive" alt="Figure 9">
+    </div>
+</div>
+<figcaption>
+<b>Figure 9</b>
+</figcaption>
+</figure>
+
+## Constitutive Modeling of Polymer Nanocomposite Melts
+The structural information determined from discrete models is used to derive the overall material properties of the composite. The focus is on the elastic constants.
+
+The insight gained from simulations was used to develop constitutive models of the nanocomposite melt. As these models are sufficiently elaborated to prevent dwelling into their details here, the reader is referred to the relevant articles listed in the Publications section. Two results showing how one of these models compares with experiments are shown below. The first pair of plots shows the relaxation modulus, G(t), after a step strain. As the wall-wall distance decreases, more bridge form and a new, slower, relaxation mode appears. The right hand side plot is an experimental result from Zhu et al (2005) which compares the neat melt relaxation with that of a nanocomposite with 11vol% silica nanoparticles. The relaxation is significantly slower in the nanocomposite.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+        <img src="modeling-polymer-based-nanocomposites/figure10.bmp" class="img-responsive" alt="Figure 10">
+    </div>
+</div>
+<figcaption>
+<b>Figure 10</b>
+</figcaption>
+</figure>
+
+The second example shows the storage and loss moduli G' and G" for neat and filled systems. In the model, increasing the residence time of polymers on filler surface, , leads to the appearance of a secondary plateau in G' and a corresponding increase of the ultimate relaxation time. In the right figure (Zhu et al., Macromolecules, 38, 8816, 2005), the lower set of curves (filled and open symbols) represent the neat melt, while the upper curves (filled and open symbols) represent the filled system. The appearance of the secondary plateau in the filled system is obvious at low frequencies.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+        <img src="modeling-polymer-based-nanocomposites/figure11.png" class="img-responsive" alt="Figure 11">
+    </div>
+</div>
+<figcaption>
+<b>Figure 11</b>
+</figcaption>
+</figure>
+
+# Publications
+{% bibliography --file modeling-polymer-based-nanocomposites %}

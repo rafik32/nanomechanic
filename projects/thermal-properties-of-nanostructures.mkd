@@ -1,0 +1,58 @@
+---
+layout: project
+title: Strain-dependence of thermal conductivity
+toc: true
+---
+
+# Introduction
+It has been long recognized that hydrostatic pressure influences heat transport in solids. Relatively well understood is the thermal conductivity reduction at low temperatures due to phonon scattering by the stress-split states of donors/acceptors in doped semiconductors under uniaxial deformation. However, at and above room temperature, the lattice thermal conductivity may increase with applied hydrostatic pressure as reported in a number of experimental studies performed in semiconductors and ionic lattice materials.
+
+Nanostructures, such as quantum wells and superlattices, may carry residual strains much larger than those typically found in the similar bulk material. For instance, a `\(\sim\)`2% strain is sustained within the layers of symmetrized strain Si/Ge superlattices, while bulk single crystal silicon may only carry a residual strain an order of magnitude smaller. It is therefore interesting to investigate to what extent strain may be used to tailor the thermal transport properties for specific applications. For instance, while high thermal conductivity is beneficial for the thermal management of lasers and microelectronics which generate considerable amount of heat that must be dissipated, low thermal conductivity is required by thermoelectric applications in order to increase the energy conversion efficiency. On the other hand, as structures approach dimensions comparable to the characteristic length scales of heat carriers, effects due to phonon interference and scattering on boundaries and interfaces start playing an important role.
+
+We have addressed this topic by means of atomistic simulations. A Lennard-Jones solid is subjected to hydrostatic, as well as to deviatoric strain corresponding to plane strain and plane stress conditions, in separate simulations. In order to avoid surface scattering, periodic boundary conditions are used in these models. Then, a thin film is considered, in which the strain state approaches that of plane stress, and in which phonon scattering on surfaces is allowed. The results are presented in the following figures.
+
+# Results
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+        <img src="thermal-properties-of-nanostructures/figure1.png" class="img-responsive" alt="Figure 1">
+    </div>
+</div>
+<figcaption>
+<b>Figure 1</b>
+</figcaption>
+</figure>
+
+
+
+Figure 1 shows the variation of the normalized thermal conductivity with hydrostatic strain. The normalization is made with the bulk thermal conductivity corresponding to zero strain. The strain values on the horizontal axis represent strain in one spatial direction. The principal directions of strain are aligned with the <100> crystallographic axes. The inset shows the type of loading. The error bars on all quantities are 20%. The thermal conductivity increases dramatically under hydrostatic compression (as observed in some experiments) and decreases under tension.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+        <img src="thermal-properties-of-nanostructures/figure2.jpg" class="img-responsive" alt="Figure 2">
+    </div>
+</div>
+<figcaption>
+<b>Figure 2</b>
+</figcaption>
+</figure>
+
+Figure 2 shows the variation of the normalized in-plane (open symbols) and out-of-plane (filed symbols) thermal conductivity under bulk plane strain conditions. The normalization is made with the bulk thermal conductivity corresponding to zero strain. The strain values on the horizontal axis represent strain in one in-plane direction (inset). The strain in the out-of-plane direction is zero. The values corresponding to hydrostatic loading (Fig. 1) are included for reference (line and squares). Under these loading conditions, the thermal conductivity becomes anisotropic and the dependence on strain is weaker than in the hydrostatic loading case.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+        <img src="thermal-properties-of-nanostructures/figure3.png" class="img-responsive" alt="Figure 3">
+    </div>
+</div>
+<figcaption>
+<b>Figure 3</b>
+</figcaption>
+</figure>
+
+Figure 3 shows the variation of the normalized in-plane (open symbols) and out-of-plane (filed symbols) thermal conductivity under bulk plane stress conditions. The normalization is made with the bulk thermal conductivity corresponding to zero strain. The strain values on the horizontal axis represent strain in one in-plane direction (inset). The values corresponding to hydrostatic loading (Fig. 1) are included for reference (line and squares). The lattice thermal conductivity is essentially insensitive to the applied strain under these conditions.
+
+# Publications
+{% bibliography --file thermal-properties-of-nanostructures %}

@@ -1,0 +1,109 @@
+---
+---
+/*
+ * Globals
+ */
+html
+{
+  position: relative;
+  margin: 0;
+  padding:0;
+  min-height:100%;
+  font: 400 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #111;
+  background-color: #fdfdfd;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+  -moz-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+}
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  color: #333;
+}
+#main {
+}
+.banner
+{
+    background-image: url({{site.baseurl}}/assets/img/banner.png);
+    height: 169px;
+}
+/* We can set this if we want the container to have the same max width as the old site */
+/*.container {
+*    max-width: 980px;
+*}
+*/
+.navbar {
+    font-size: 20px;
+    margin-top: 20;
+}
+.text-justify {
+  text-align: justify;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+figure {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+nav[data-toggle='toc'] {
+  margin-top: 30px;
+}
+
+/* manually set width to less than width of container
+ * there is a javascript way to fix this and get the container size but don't
+ * want to mess with that now: https://github.com/twbs/bootstrap/issues/6350
+ * I just chose a value that is less than the value of the col-md-3
+ */
+nav.affix {
+    width: 20%;
+}
+
+/* small screens */
+@media (max-width: 768px) {
+  /* override the Affix plugin so that the navigation isn't sticky */
+  nav.affix[data-toggle='toc'] {
+    position: static;
+    width: inherit;
+  }
+
+  /* alternatively, if you *do* want the second-level navigation to be shown (as seen on this page on mobile), use this */
+  nav[data-toggle='toc'] .nav .nav{
+    display: block;
+  }
+}
+#banner-text {
+    margin-left: 20px;
+    font-size: 40px;
+}
+table {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:40px;
+    margin-top:40px;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+tbody tr:nth-child(odd) {
+   background-color: #ccc;
+}
+h5 {
+    font-weight: bold;
+}
+/*
+*ol.bibliography{
+*    list-style-type: none;
+*}
+*/

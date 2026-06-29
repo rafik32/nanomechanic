@@ -1,0 +1,99 @@
+---
+layout: project
+title: Coarse Grained Models of Polymers
+sponsors:
+    - name: National Science Foundation
+      link: http://www.nsf.gov
+      note: >
+             <h4>Award Number: 0310596 and 0303902</h4>
+             <small>Any opinions, findings, and conclusions or recommendations 
+             expressed in this material are those of the author(s) and do not 
+             necessarily reflect the views of the National Science Foundation</small>
+faculty:
+    - name: Catalin Picu
+      title: Professor
+students:
+    - name: Abhik Rakshit
+      title: Graduate Research Assistant
+toc: true
+---
+Developing coarse grained representations of molecular systems is a long-standing problem in statistical physics. The early work was devoted primarily to dilute systems in which binary interactions control the behavior. In dense systems, long-range spatial and temporal correlations are important.
+
+Nevertheless, the task presents significant interest. Complex materials and molecular systems, in particular, have characteristic times that span many orders of magnitudes, e.g., from atomic vibrations to hydrodynamic modes. The macroscopic evolution of the system depends on the dynamics on all scales, but, as the scale of observation becomes coarser, the contribution of finer and finer scales is less and less important, or, more precisely, is important only in average.
+
+An obvious way to relate the atomistic and macroscopic scales would be to predict the trajectories of all particles, for example, by molecular dynamics (MD). In this case all modes would be explicitly represented; however, the method is of limited importance as the volume of calculations required exceeds the current capabilities.
+
+An alternative is to develop systematic procedures by which the macroscopically "relevant" modes or degrees of freedom are identified and their evolution is predicted without the need to fully represent the dynamics of the fine system.
+
+We developed a coarse grained model of entangled polymeric system which is a hybrid between a multi-body and a mean-field representation. The chain is coarse grained such that each segment of length equal to that of an entanglement segment (Ne consecutive beads) is lumped into a blob. The blobs interact through potentials of mean force. The chain inner blobs are constrained to move along the respective chain coarse backbone path, which insures that chains do not cross. The chain end blobs are free to move in 3D therefore dynamically re-defining the coarse backbone path of the respective chain. The system is evolved with Brownian dynamics. The fine to coarse mapping, the definition of the backbone paths at the initial time, the potentials and the friction coefficient used in Brownian dynamics are all calibrated from the equivalent fine scale system. 
+
+The concept is shown in the figure below.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+    <img src="coarse-grained-models-of-polymers/figure1.png" class="img-responsive" alt="Figure 1">
+    </div>
+</div>
+<figcaption>
+<b>Figure 1</b>
+</figcaption>
+</figure>
+
+Note that the fine scale model is a deterministic, conservative atomistic model, while the coarse model is stochastic and dissipative. The dissipation is related to the energy exchanged with the degrees of freedom eliminated from the model (the bath). Another difference is that the fine scale model is local in time, while the coarse model is non-local (has memory). The memory is also a consequence of coarse graining, i.e. projecting from the phase space of the fine system to the coarser phase space of the coarse system.
+
+The figures below shows the potentials of mean force for bonded and non-bonded interactions in the coarse model. The non-bonded interactions become softer as one coarse grains.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+    <img src="coarse-grained-models-of-polymers/figure2.bmp" class="img-responsive" alt="Figure 2">
+    </div>
+</div>
+<figcaption>
+<b>Figure 2</b>
+</figcaption>
+</figure>
+<figure>
+<div class="row">
+    <div class="col-md-12">
+    <img src="coarse-grained-models-of-polymers/figure3.bmp" class="img-responsive" alt="Figure 3">
+    </div>
+</div>
+<figcaption>
+<b>Figure 3</b>
+</figcaption>
+</figure>
+
+The two figures below show the comparison of measures of dynamics of the fine and coarse models. The first figure shows the longest 4 Rouse modes; the lines are the predictions of the coarse model, while the symbols correspond to the same modes in the fine system. Except the fact that the coarse model shows less stretching, the agreement is good.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+    <img src="coarse-grained-models-of-polymers/figure4.bmp" class="img-responsive" alt="Figure 4">
+    </div>
+</div>
+<figcaption>
+<b>Figure 4</b>
+</figcaption>
+</figure>
+
+The second figure shows the mean square displacement of blobs and chain centers of mass computed from the fine and coarse models. The predictions agree at times longer than the Rouse time of the chains.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+    <img src="coarse-grained-models-of-polymers/figure5.bmp" class="img-responsive" alt="Figure 5">
+    </div>
+</div>
+<figcaption>
+<b>Figure 5</b>
+</figcaption>
+</figure>
+
+The gain in computational efficiency by using the coarse model is significant. Obtaining the MSD curves shown here from the fine model took 3 weeks on a single processor. Obtaining the MSD data shown by continuous lines (coarse model) took about 6 hours. 
+
+Once calibrated, the model is being use to represent the dynamics of polydisperse melts in equilibrium and non-equilibrium and of polymer nanocomposites.
+
+# Publications
+{% bibliography --file coarse-grained-models-of-polymers %}

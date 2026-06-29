@@ -1,0 +1,182 @@
+---
+layout: project
+title: Testing Mechanical Behavior of Nanorods
+sponsors:
+    - name: National Science Foundation
+      link: http://www.nsf.gov
+      note: >
+             <h4>Award Number: CMS - 0324492</h4>
+             <small>Any opinions, findings, and conclusions or recommendations 
+             expressed in this material are those of the author(s) and do not 
+             necessarily reflect the views of the National Science Foundation</small>
+
+faculty:
+    - name: Catalin R. Picu
+      title: Professor
+    - name: G.C. Wang
+      title: Professor (Department of Physics, Applied Physics, &amp Astronomy)
+    - name: T.M. Lu
+      title: Professor (Department of Physics, Applied Physics, &amp Astronomy)
+students:
+    - name: Deli Liu
+    - name: Churamani Gaire
+    - name: Dexian Ye
+project: testing
+order: 1
+toc: true
+---
+
+# Introduction
+The trend toward miniaturization in microelectronics and the emerging field of nanotechnology require understanding material properties of smaller and smaller volumes of material. In microelectronics, the device dimension is becoming so small that a 0.5 μm "crack" leads to device failure. Due to the heterogeneity of the device, this failure process occurs in a small volume of material or along an interface of small spatial extent. In nanotechnology, one aims at building nanostructures and nanomachines whose design is impossible without the fundamental understanding of the mechanical behavior of materials at the nanoscale. In this program we investigate some key nanoscale mechanical properties such as size effects of strength, rate sensitivity and plasticity.
+
+Most such data were obtained before by using surface probes, in particular, nanoindentation. In this test, the deformation is governed by a small number of crystal defects and the statistics that leads to the macroscopic bulk plastic behavior is not reproduced. Although useful for principle demonstration, the test poses some challenges in data interpretation. The limitation stems from the nature of loading of the material nanovolume; the nanoindenter induces steep stress gradients and the "tested volume" is not well defined.
+
+To date, most work on individual (isolated) nanoscale structures has focused on carbon nanotubes, very thin films and nanowires. There appears to be agreement in the literature regarding the scaling of the plastic behavior: the yield stress increases with decreasing specimen dimensions. The scaling of the yield stress is attributed to two effects: presence of strain gradients, and "dislocation starvation." This second effect leads to size effects even in absence of strain gradients, e.g in vertical pillars subjected to compression. The phenomenon consists in the fact that, in small specimens, the residence time of dislocations in the material is short. Once the pre-existing dislocations leave the specimen, new ones have to be created to sustain plastic deformation.
+
+The work performed as part of this project aims at using a novel nanoscale material testing technique to study the size effect in several mechanical material properties, size effect associated with reducing specimen dimensions in the nanoscale range. We are using a new class of isolated nanostructures specially designed to allow us to control the stress state in the specimen and reproduce the macroscopic tests at the nanoscale.
+
+# Approach
+Part of the novelty of the proposed work consists in the use of special nanostructures designed for the purpose of measuring mechanical properties at the nanoscale. These structures (Fig. 2) are in the form of nanobeams (and structures of beams) and nanosprings with controlled nanometer scale dimensions. They are currently fabricated in our lab by the oblique angle deposition technique. These structures provide the advantage that the volume of material tested is well defined AND the stress state in the structure is controlled. Specifically, we design the shape of the specimens using finite element analysis in order to obtain a desired stress state and then we grow them to these specifications. The oblique angle deposition technique uses the shadowing effect during growth. By this, some of the incident particles do not reach certain points of the substrate due to the concurrent growth of parallel structures. The shadowing effect is controlled by adjusting the incidence angle ?, while rotating the substrate, as shown schematically in Fig. 1. Such set-ups may be used with evaporation as well as with sputtering.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+    <img src="testing-material-behavior-at-the-nanoscale/figure1.png" class="img-responsive" alt="Figure 1">
+    </div>
+</div>
+<figcaption>
+<b>Figure 1:</b> Oblique angle deposition setup (with the capability of rotating the substrate).
+</figcaption>
+</figure>
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+    <img src="testing-material-behavior-at-the-nanoscale/figure2.bmp" class="img-responsive" alt="Figure 2">
+    </div>
+</div>
+<figcaption>
+<b>Figure 2:</b> Si nanostructures grown on a templated substrate (W plugs): (left) nanorods deposited at an oblique angle of 88 degrees, and (right) nanosprings.
+</figcaption>
+</figure>
+
+Other types of structures are shown in Fig. 3. These are made from two rods oriented at about 90 degrees relative to each other. The schematic of this arrangement is shown in the same figure. The advantage presented by this geometry is that the maximum stress (maximum shear, maximum principal stress) is obtained at the point where the two rods are joined and not at the base. If failure occurs during testing, this ensures we probe the actual material response, and not the response of the interface between the nanostructure and the substrate.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+    <img src="testing-material-behavior-at-the-nanoscale/figure3.bmp" class="img-responsive" alt="Figure 3">
+    </div>
+</div>
+<figcaption>
+<b>Figure 3:</b> SEM top view of an array of amorphous Si "elbow structures" on a templated substrate, on the right hand side is schematic of an elbow composed of two arms at 90 degrees relative to each other.
+</figcaption>
+</figure>
+
+# Results
+
+## Testing Methodology
+Testing of these structures is performed by using an AFM tip with stiff cantilever. The AFM allows sample imaging before and after the test, as well as accurate selection of the nanostructure to be tested and accurate positioning of the tip. The apparatus allows for the independent measurement of both the deformation and the applied force. 
+
+A schematic of the test set-up is shown in Fig. 4. The AFM is used to obtain a topographical map of the surface. Then one selects a specimen to be loaded, the tip is positioned and brought in contact with the nanostructure. The vertical motion of the table is then controlled. The cantilever deflection is mapped to the force, while the deflection of the specimen results from the known motion of the table and the measured deflection of the cantilever.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+    <img src="testing-material-behavior-at-the-nanoscale/figure4.jpg" class="img-responsive" alt="Figure 4">
+    </div>
+</div>
+<figcaption>
+<b>Figure 4:</b> Scanning electron micrographs (cross sections) of the Si helical sub-micronsprings (about 4 micrometer tall) on square and triangular patterned Si substrates prepared by oblique angle deposition. In Fig. 3a a schematic of the loading using the AFM tip is shown.
+</figcaption>
+</figure>
+
+
+## Elasticity of Nanostructures
+The elastic response, including the spring constant, of individual Si helical-shape sub-micron springs (Fig. 4), was measured. The springs are not touching each other. As shown in Fig. 5, the response is linear elastic in the force range used in these tests.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+    <img src="testing-material-behavior-at-the-nanoscale/figure5.jpg" class="img-responsive" alt="Figure 5">
+    </div>
+</div>
+<figcaption>
+<b>Figure 5:</b> Representative loading (triangles) and unloading (open squares) force vs displacement curves for spring a and b in Fig. 3.
+</figcaption>
+</figure>
+
+## Inelastic Deformation
+Figure 6 shows the force-deflection curve measured for the structures in Fig. 3. These are made from amorphous Si, which is a nominally brittle material. However, here we observe pronounced inelastic behavior even before failure. If the sample is unloaded before the peak load, a residual deformation is measured. This indicates a brittle-to-ductile transition of the material when the specimen dimensions are reduced.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+    <img src="testing-material-behavior-at-the-nanoscale/figure6.bmp" class="img-responsive" alt="Figure 6">
+    </div>
+</div>
+<figcaption>
+<b>Figure 6:</b>  Force-deflection curve measured for the specimens in Fig. 3 showin inelastic behavior of amorphous Si.
+</figcaption>
+</figure>
+
+
+## Material Response to Fatigue Loading
+The specimens in Fig. 3 were tested under cyclic loading conditions to determine their fatigue life. Brittle materials are usually not susceptible to fatigue failure. However, life reduction is observed in small-scale structures made from brittle materials loaded a large number of cycles. Figure 7 shows a Wohler diagram for these specimens. The data points indicate failure of various specimens tested up to the specified load and number of cycles. As the applied load decreases, the number of cycles to failure increases.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+    <img src="testing-material-behavior-at-the-nanoscale/figure7.bmp" class="img-responsive" alt="Figure 7">
+    </div>
+</div>
+<figcaption>
+<b>Figure 7:</b>  Wohler-type curve for the nanorods in Fig. 3. The data points indicate failure under cyclic loading. A pronounced fatigue susceptibility is shown.
+</figcaption>
+</figure>
+
+
+## Electro-mechanical Actuation at the Nanoscale
+Electromechanical actuation was demonstrated at the nanoscale using the four-turn Si nanosprings in Fig. 4. Si springs were rendered conductive by coating with a 10 nm-thick Co layer by chemical vapor deposition. A dc current was passed through the spring which behaves as a solenoid. A conductive AFM tip was used for this purpose. The electromagnetic force between the wires of the spring leads to spring compression, which is measured with the same AFM tip. This is possible because the tip is in contact mode continuously touching the nanostructure. A schematic of the set-up is shown in Fig. 8.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+    <img src="testing-material-behavior-at-the-nanoscale/figure8.png" class="img-responsive" alt="Figure 8">
+    </div>
+</div>
+<figcaption>
+<b>Figure 8:</b>  A cross sectional SEM image of the four-turn Si nanospring sample. A schematic of the circuit used for the electromechanical measurements including a Pt (30 nm) coated AFM tip, a resistor R and a dc power supply Vdc is also shown. The schematic on the left shows the cross section of the conductive Co coating on the Si nanospring.
+</figcaption>
+</figure>
+
+## Nanostructures used as Compliant Layers to Reduce Residual Stresses in Films
+ We developed a method to significantly reduce the residual stress in W films by growing the films on an un-structured layer of slanted W nanorods. Specifically, a 50 nm thick layer of W nanorods is first deposited on the bare substrate (say, Si) by glancing angle deposition. Since the rods do not grow on a template (as in the figures shown above), nucleation is random and the density of nanostructures is high. Once the compliant layer is deposited, the growth conditions are returned to normal and a regular continuous W film is deposited. The residual stress on this film is much smaller than that in the same film grown directly on the bare substrate. This allows growing thicker films before buckling.
+
+
+Figure 9 shows an image of a buckled 240 nm thick film grown directly on the substrate, and that of an intact film of same thickness grown on the compliant layer. Figure 10 shows a cross-section through an un-buckled 1.8 microns thick W film formed from a sandwich of 3 normal films and 3 compliant layers.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+    <img src="testing-material-behavior-at-the-nanoscale/figure9.bmp" class="img-responsive" alt="Figure 9">
+    </div>
+</div>
+<figcaption>
+<b>Figure 9:</b>  Optical image of a W film deposited on the bare substrate and that of a film of same thickness deposited on a 50 nm thick layer formed from slanted W nanorods. The nanostructured layer works as a compliant buffer between the film and the substrate, therefore reducing the residual stress in the film.
+</figcaption>
+</figure>
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+    <img src="testing-material-behavior-at-the-nanoscale/figure10.bmp" class="img-responsive" alt="Figure 10">
+    </div>
+</div>
+<figcaption>
+<b>Figure 10:</b>  Cross-section through a 1.8 microns W film which did not buckle. The thick film is made from 3 layers of normal W grown on 3 nanostructured buffer layers.
+</figcaption>
+</figure>
+
+# Publications
+{% bibliography --file Nanostructure Mechanical Behavior - Testing at the Nanoscale %}

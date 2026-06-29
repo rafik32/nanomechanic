@@ -1,0 +1,22 @@
+---
+layout: page
+title: Sponsors
+group: navigation
+nav_weight: 6
+toc: flase
+---
+
+We gratefully acknowledge the support of the following sponsors:
+
+* US National Science Foundation ([link](https://www.nsf.gov/eng/cmmi/about.jsp))
+* US Air Force Office of Scientific Research ([link](https://www.afrl.af.mil/AFOSR))
+* US Office of Naval Research ([link](http://www.onr.navy.mil))
+* Army Research Office and Army Research Laboratory ([link](http://www.arl.army.mil/www/default.cfm))
+* NASA ([link](https://www.nasa.gov/))
+* National Institute of Health ([link](http://www.nih.gov/))
+* European Science Foundation ([link](http://www.esf.org/home.html))
+* Romanian Science Foundation UEFISCDI ([link](http://uefiscdi.gov.ro/))
+* Aluminum Company of America ([link](http://www.alcoa.com/global/en/home.asp))
+* Procter & Gamble ([link](http://us.pg.com/))
+* IBM ([link](http://www.ibm.com))
+* Simmetrix Inc. ([link](http://simmetrix.com/))

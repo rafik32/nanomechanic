@@ -1,0 +1,108 @@
+---
+layout: project
+title: Non local elasticity
+
+faculty:
+    - name: Catalin Picu
+      title: Professor
+toc: true
+---
+# Introduction
+Multiple recent experimental results have shown a significant size-effect in mechanical properties when the dimensions of the specimen or the probed material volume become small. The classical continuum theories, on the other hand, lack the capability of representing such effects since they do not include any internal length scale. Consequently, these theories are expected to fail when the specimen size or the wavelength of the perturbation become comparable with the internal length scale(s) of the material.
+
+Several modifications of the classical elasticity formulation have been proposed to address this deficiency. They are of integral non-local or gradient type and, as a common feature, include one or several intrinsic length scales. Their predictions reduce to those of local continuum theories when the specimen size is much larger than the internal length scale. (Eringen and Edelen, 1972; Kunin, 1982; Valanis, 2000, Altan and Aifantis, 1992; Gutkin and Aifantis, 1999).
+
+In the integral formulation of non-local elasticity due to Eringen (1972) the constitutive equation is expressed in terms of a non-local kernel introduced to account for the effect of long-range interatomic forces. The stress at point x is a function of the strain at all points y in the body, through a weighting kernel . Specifically, one writes
+
+`\[\sigma_{ij}\left(x\right)=\int_V{\alpha\left(|x-y|\right)t_{ij}(y)dV(y)}\]`
+
+where `\(t_{ij}(y)\)` are the usual local stresses at point y. Hence, `\(\alpha\)` weighs the elastic constants of the material. The kernel is often assumed to be Gaussian
+
+`\[\alpha\left(|x-y|\right) = \alpha_0 e^{-\left(\frac{|x-y|}{mb}\right)^2} \]`
+
+where `\(mb\)` is an intrinsic length scale (in units of the lattice parameter `\(b\)`), and `\(\alpha_0\)` is found from the normalization condition for `\(\alpha\)`, `\(\int_V{\alpha\left(|x-y|\right)}dV(y) = 1 \)`, to be `\(\alpha_0 = \frac{1}{\pi \sqrt(\pi)}\)` `\(m^3\)`.
+
+The selection of the internal length scale `\(mb\)` is still a controversial issue. This metric provides the order of magnitude of the threshold below which the non-local theory departs from the predictions of the corresponding local formulation.
+
+The common feature of all non-local formulations is the elimination of stress field singularities. The gradient elasticity solution shows no singularity in both stress and strain fields at the core of dislocations. Furthermore, the strain energy is finite at sites where local elasticity predicts stress singularities and infinite strain energy density.
+
+# A new non-local elasticity kernel
+The non-local formulation of elasticity has been introduced as a correction to the local theory in order to account for the long-ranged interatomic forces. The shape of the non-local kernel is assumed therefore to represent the actual atomic-scale interactions. However, the Gaussian kernel of eqn. (1) is incompatible with even a simple pair potential of the Lennard-Jones type. The first argument in this sense is related to the short range of the kernel. Even with the largest non-locality parameter suggested in the literature (m = 0.5), the kernel is so short ranged that a displacement of a first neighbor located at distance b from the representative atom, effectively has no influence on the central atom. Hence, the actual interatomic interactions are not directly represented.
+
+The second argument is rooted in the following observation. In a lattice in which interactions are described by a pair potential similar to the Lennard-Jones, a shift of a neighboring atom located at a distance smaller than the inflection point of the potential, away from the central atom, produces on the reference atom a force in the direction of the shift. A similar relative displacement of a neighbor located farther than the inflection point, leads to a force on the representative atom in the direction opposite to that of the shift. This suggests that the kernel should change sign at a distance corresponding to the inflection point of the interatomic potential.
+
+These considerations motivate the use of a modified kernel in the continuum theory. The functional form of the new kernel is
+
+`\[\alpha\left(|x-y|\right) = \alpha_0\left(1-n\left(\frac{|x-y|}{b}\right)^2\right) e^{\left(\frac{|x-y|}{mb}\right)^2}\]`
+
+where n is a second non-dimensional non-locality parameter. The parameter m controls the range of the kernel, while n sets the distance from the representative atom at which the kernel changes sign. While with a Gaussian kernel of the form (1) m is limited to 0.5, the kernel (3) allows much larger values of m which, in turn, means longer range. Figure 1 shows qualitatively the kernel (3) along with its Gaussian equivalent (at same m).
+
+A normalization relationship similar to that used for the kernel in eqn. (1) holds, and the parameter `\(\alpha_0\)` becomes `\(\alpha_0 = \frac{1}{\pi\sqrt{\pi}\left(m^3 - 1.5nm^5\right)}\)`.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+        <img src="non-local-elasticity/figure1.png" class="img-responsive" alt="Figure 1">
+    </div>
+</div>
+<figcaption>
+<b>Figure 1:</b> The new non-locality kernel of eqn. 3 along with the equivalent Gaussian kernel.
+</figcaption>
+</figure>
+
+# Derivation of the non-locality kernel from atomistic simulations
+Atomistic simulations were used to test the heuristic arguments stated above. The non-locality kernel has been computed from the atomic level stress evaluated in a material subjected to a controlled deformation pattern. The exercise has been performed for a Morse material in which the interatomic interactions are described by a pair potential of the form, `\(u(r) = 4\left(e^{-4(x-1)} - e^{-2(x-1)}\right)\)` as well as for Al described by an EAM potential. The results are qualitatively similar and fully justify the observations made above. The kernel is long ranged and becomes negative beyond the first nearest neighbor. The kernels for Al are shown in Figure 2. Details of the procedure are to appear in J. Mech. Phys. Sol.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+        <img src="non-local-elasticity/figure2.png" class="img-responsive" alt="Figure 2">
+    </div>
+</div>
+<figcaption>
+<b>Figure 2:</b>  Non-local elasticity kernels extracted from atomistic simulations of Al (Ercolessi-Adams EAM potential). The abscissa is the distance from the representative atom in Angstroms.
+</figcaption>
+</figure>
+
+# The Peierls-Nabarro model of a dislocation in non-local elasticity
+The role of non-locality in the Peierls-Nabarro model was investigated and the results have been published in ({% cite picu_peierls_2002 %}).
+
+First, the constitutive equation of the continuum (bounding the glide plane of the dislocation) was rendered non-local. The dislocation core becomes narrower with increasing the internal length scale of the model (mb), while the Peierls stress increases. Figure 3 shows the normalized core half-width as a function of the non-locality parameter m, while the corresponding normalized Peierls stress is shown in Figure 4. The Gaussian form (1) for the kernel was used in these calculations. 
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+        <img src="non-local-elasticity/figure3.png" class="img-responsive" alt="Figure 3">
+    </div>
+</div>
+<figcaption>
+<b>Figure 3:</b>  Normalized core half-width w as a function of the non-locality parameter m. The normalization is made with the lattice spacing b.
+</figcaption>
+</figure>
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+        <img src="non-local-elasticity/figure4.png" class="img-responsive" alt="Figure 4">
+    </div>
+</div>
+<figcaption>
+<b>Figure 4:</b>  Peierls stress in units of the shear modulus \(\mu\) as a function of the non-locality parameter m.
+</figcaption>
+</figure>
+
+The results obtained with the fully non-local model, in which both the continuum and the cohesive law are rendered non-local do not differ significantly from those obtained in the case in which the cohesive law is kept local (Figures 3 and 4).
+
+It has been observed that the functional form of the rebound force (local or non-local) describing the interactions across the glide plane has a major effect on the predicted core shape and Peierls stress.
+
+# Non-local rubber elasticity
+A non-local formulation of rubber elasticity with applications to nanostructured materials is developed. In general, stress has an entropic and an energetic component. The energetic component is due to short range interactions of the representative atom with its neighbors, while the entropic component is due to chain conformation changes upon deformation. In rubbers, the entropic component is dominant. Both components are intrinsically non-local; stress at a point depends on the deformation in a whole neighborhood of that point. The range of non-locality of the entropic component is on the order of the chain size (or distance between cross-links), and is much larger than the range of non-locality of the energetic component. Non-locality becomes important when the deformation field varies significantly over a distance comparable with the internal length scale of the material (large gradients). Here, non-local formulations are derived for both the energetic and the entropic components of stress for a system of polymeric chains.
+
+For small deformations, linear non-local elasticity may be used for the energetic component of stress and a kernel may be derived within the integral formalism of non-local elasticity. This kernel is derived based on the atomic scale structure found from atomistic simulations. Since small deformations elasticity is controlled by localized energetic interactions (bonded and non-bonded), chain conformations are unimportant. The kernel is similar to the modified kernel in Fig. 1.
+
+The situation is more complicated for the entropic component of stress (the dominant component in rubbers and polymers above the glass transition). First, in the classical theory of rubber elasticity, the stress is defined as an average over a volume comparable to the volume occupied by a chain, i.e. it is assume that the chain is subjected to a homogeneous deformation. Second, the material response is highly non-linear, the non-linearity being of both constitutive (e.g. Langevin chains) and geometric (chain convection) nature. To mitigate the first constraint, the classical rubber elasticity theory was reformulated such to associate a stress tensor to a much smaller volume of material, a volume comparable in size to a "bead" of the atomistic model. This is the same volume with which one associates the energetic component of stress. This led to an analytic formulation of stress as an integral over a spherical volume surrounding the current point with radius equal to the chain radius of gyration. Due to the intrinsic non-linearity of the response, a kernel could not be separated.
+
+The details of this work were published in a special issue of the Journal of Multiscale Computational Engineering dedicated to linking discrete and continuum models {% cite picu_nonlocal_2003 %}
+
+# References
+{% bibliography --cited_in_order %}

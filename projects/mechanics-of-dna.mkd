@@ -1,0 +1,93 @@
+---
+layout: project
+title: Mechanics of DNA
+sponsors:
+    - name: Rensselaer Polytechnic Institute
+      link: http://www.rpi.edu
+faculty:
+    - name: Catalin Picu
+      title: Professor
+students:
+    - name: Ehsan Ban
+      title: Graduate Research Assistant
+toc: true
+---
+
+# Mechanics of Self Assembled DNA Crystals
+3D DNA crystals have important potential applications in nanotechnology, for example in mediating the orientation of nanostructures in arrays and trapping biomolecules for crystallographic structure identification.Some crystals of this type aremade up from triangular structures attached at their corners as shown in Fig. 1. The junctions are similar to Holliday junctions and the crystal has rhombohedral symmetry. ([More at Ned Seeman's Homepage](http://seemanlab4.chem.nyu.edu/))
+
+<figure>
+<div class="row">
+    <div class="col-md-6">
+    <img src="mechanics-of-dna/figure1a.jpg" class="img-responsive" alt="Figure 1a">
+    </div>
+    <div class="col-md-6">
+    <img src="mechanics-of-dna/figure1b.jpg" class="img-responsive" alt="Figure 1b">
+    </div>
+</div>
+<figcaption>
+<b>Figure 1:</b> Schematic representation of DNA crystal structures. The colors represent the plane in the direction perpendicular to the image in which the respective triangular structure is placed. From {% cite zheng_molecular_2009 %}.
+</figcaption>
+</figure>
+
+# Mechanics of Double Stranded DNA
+
+Classical Molecular Dynamics is used to study the deformation and failure of such structures at ambient temperature.
+
+Let us look first at how an isolated DNA double strand deforms. Figure 2 shows the force-displacement relation and four snapshots of the simulation. The peak of the curve corresponds to the third configuration. The last configuration is selected from the right side of the curve, corresponding to a smaller force.
+
+<figure>
+<div class="row">
+    <div class="col-md-6">
+    <img src="mechanics-of-dna/figure2a.png" class="img-responsive" alt="Figure 2a">
+    </div>
+    <div class="col-md-6">
+    <img src="mechanics-of-dna/figure2b.png" class="img-responsive" alt="Figure 2b">
+    </div>
+</div>
+<figcaption>
+<b>Figure 2:</b>Force-displacement curve for the extension of a DNA double strand, and four configurations during stretch.
+</figcaption>
+</figure>
+
+# Mechanics of Sticky Ends
+Since the crystal is assembled from strands which pair at their ends ("sticky ends"), it is interesting to simulate the deformation and failure of a double strand containing a sticky end. Such a model is obtained by introducing nicks in the opposite strands of a perfect DNA double helix. The resulting molecule is stretched in the same fashion as the double stranded DNA.The deformed structure and the force-displacement curve are shown in Figure 3. 
+
+<figure>
+<div class="row">
+    <div class="col-md-6">
+    <img src="mechanics-of-dna/figure3a.png" class="img-responsive" alt="Figure 3a">
+    </div>
+    <div class="col-md-6">
+    <img src="mechanics-of-dna/figure3b.jpg" class="img-responsive" alt="Figure 3b">
+    </div>
+</div>
+<figcaption>
+<b>Figure 3:</b> Force-displacement curve for the extension of a DNA double strand (blue), a double strand with a sticky end 2 base pairs long (red), and a sticky end 4 base pairs long (brown). Four configurations during stretch are shown for the strand with 2 base pairs sticky end.
+</figcaption>
+</figure>
+
+Figure 4 shows the strength of sticky ends computed for the listed structures. Figure 4(a) shows the connected DNA strands, with the sticky end sequence being marked with vertical bars. Figure 4(b) shows the dissociation strengths evaluated in uniaxial tension for the structures in Figure 4(a). These can be classified in “strong” and “weak” as indicated. 
+
+
+<figure>
+<div class="row">
+    <div class="col-md-6">
+    <img src="mechanics-of-dna/figure4a.png" class="img-responsive" alt="Figure 4a">
+    a)
+    </div>
+    <div class="col-md-6">
+    <img src="mechanics-of-dna/figure4b.png" class="img-responsive" alt="Figure 4b">
+    b)
+    </div>
+</div>
+<figcaption>
+<b>Figure 4:</b> Strength of DNA double strands connected by sticky ends. The structures are shown in (a) while the strength-stretch relation is shown in (b).
+</figcaption>
+</figure>
+
+# References
+{% bibliography --cited_in_order %}
+
+# Publications
+{% bibliography --file mechanics-of-dna %}

@@ -1,0 +1,341 @@
+---
+layout: project
+title: Mechanics of Materials with Fractal Microstructures
+sponsors:
+    - name: Rensselaer Polytechnic Institute
+      link: http://www.rpi.edu
+faculty:
+    - name: Catalin Picu
+      title: Professor
+students:
+    - name: Monica Soare
+toc: true
+---
+
+# Description
+Complexity is ubiquitous in both living and non-living systems. It emerges from the work of nature that develops heterogeneous systems by self-organization resulting in hierarchical structures that extend over multiple spatial scales.
+
+A sub-class of the hierarchical structures includes those exhibiting geometric self-similarity, i.e. the geometry remains statistically identical as the scale of observation decreases (zoom-in). Examples of such fractal materials are the aero-gels, which are produced by aggregation of colloidal particles followed by the evaporation of the suspension fluid (Fig. 1a). Porous materials, such as some rock and the trabecular bone (Fig. 1b) are other examples exhibiting self-similar geometry over a range of scales.
+
+
+<figure>
+<div class="row">
+    <div class="col-md-6">
+        <img src="mechanics-of-materials-with-fractal-microstructure/figure1a.jpg" class="img-responsive" alt="Figure 1a">
+Silica aero-gel
+    </div>
+    <div class="col-md-6">
+        <img src="mechanics-of-materials-with-fractal-microstructure/figure1b.jpg" class="img-responsive" alt="Figure 1b">
+Trabecular bone
+    </div>
+</div>
+<figcaption>
+<b>Figure 1:</b> Cross section of materials with hierarchical microstructures.
+</figcaption>
+</figure>
+
+Another example is provided by materials with branched internal structure resulting, for example, from dendritic growth. Natural systems with branched structure are the mammalian lung, Fig. 2 Left), and the hierarchical structure of the Gecko lizard foot, Fig. 2 Right).
+
+<figure>
+<div class="row">
+    <div class="col-md-6">
+        <img src="mechanics-of-materials-with-fractal-microstructure/figure2a.jpg" class="img-responsive" alt="Figure 2a">
+Human respiratory system
+    </div>
+    <div class="col-md-6">
+        <img src="mechanics-of-materials-with-fractal-microstructure/figure2b.jpg" class="img-responsive" alt="Figure 2b">
+Foot of the Gecko lizard
+    </div>
+</div>
+<figcaption>
+<b>Figure 2:</b> Materials with hierarchical structures.
+</figcaption>
+</figure>
+
+Figure 3 shows another example of a fractal microstructure which is obtained by a applying a mapping from one scale to the next. Two alternatives of applying this mapping are shown: the left column represents the deterministic case, while the right column the equivalent stochastic case. This so-called Menger sponge is obtained by starting with a cube, dividing each edge of it in 3 parts, hence dividing the cube in 27 smaller cubes and then eliminating those placed in the center of each face and in the center of the cube. In the next iteration, this procedure is applied to each of the small cubes that remain in the structure. In the stochastic case (right column), the fraction of cubes eliminated in each steps remains the same, which cubes are eliminated become random.
+
+<figure>
+<div class="row">
+    <div class="col-md-6">
+        <img src="mechanics-of-materials-with-fractal-microstructure/figure3a.jpg" class="img-responsive" alt="Figure 3a">
+    </div>
+    <div class="col-md-6">
+        <img src="mechanics-of-materials-with-fractal-microstructure/figure3b.jpg" class="img-responsive" alt="Figure 3b">
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <img src="mechanics-of-materials-with-fractal-microstructure/figure3c.jpg" class="img-responsive" alt="Figure 3c">
+    </div>
+    <div class="col-md-6">
+        <img src="mechanics-of-materials-with-fractal-microstructure/figure3d.jpg" class="img-responsive" alt="Figure 3d">
+    </div>
+</div>
+<figcaption>
+<b>Figure 3:</b> The first two generations of a realization of a deterministic left) and stochastic right) Menger sponge embedded in 3D space.
+</figcaption>
+</figure>
+
+ The behavior of structures with non-decoupling scales cannot be easily predicted with the classical methods of continuum mechanics. For example, homogenization theory cannot be used to determine the overall moduli of aero-gels. For homogenization theory to apply, one needs scale decoupling (homogeneity on scales smaller than that of observation) and an assumption of periodicity (translational symmetry). In principle, one may consider finer and finer discretizations/details until the geometry is fully represented. However, as the number of scales increases, this becomes unfeasible. This appears to be a technology problem rather than a fundamental one. In fact, if the fractal would contain an infinite number of scales (a real hierarchical structure), the problem is clearly un-solvable even conceptually. This stems from fundamental limitations of the continuum field theories.
+
+The goal of this work is to develop formulations adequate for solving boundary value problems defined over fractal microstructures with a large number of relevant scales.
+
+
+# Fractal and spatially correlated composite microstructures
+
+The effect of correlations of the spatial distribution of inclusions in
+a two-phase composite is studied numerically in this work.
+Microstructures with fractal distribution of inclusions, characterized
+by long-range power law correlations, are compared with random inclusion
+distributions of same volume fraction. The elastic-plastic response of
+composites with stiff elastic inclusions and elastic-plastic matrix is
+studied.
+
+Two phase, two-dimensional composites are considered. The matrix fills
+the Euclidean space of the problem domain. In each realization,
+inclusions form a fractal which is a generalization of the classical
+Cantor set to probabilistic structures embedded in 2D. The
+microstructure is constructed hierarchically by iteratively applying a
+set of transformation rules.
+
+Composites with hierarchical multiscale structure with different
+distributions of inclusions are presented in Figure 13.The figure shows
+a microstructure in which inclusions form a fractal (a), a
+microstructure with randomly distributed inclusions (b), and a
+microstructure in which inclusions are distributed in a spatially
+correlated way, with the correlation being exponential.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+        <img src="mechanics-of-materials-with-fractal-microstructure/figure4.png" class="img-responsive" alt="Figure 4">
+    </div>
+</div>
+<figcaption>
+<b>Figure 4:</b>
+The three types of composite microstructures studied in this
+work. The matrix is shown in white and inclusions in black. The smallest
+length scale, i.e. the dimension of an isolated inclusion is
+\(\mathbf{\varepsilon}_{\mathbf{n}}\mathbf{=}\mathbf{\varepsilon}_{\mathbf{5}}\mathbf{=}\frac{\mathbf{L}}{\mathbf{243}}\).
+The volume fraction of inclusions is \(f = 0.131\) in all cases shown. (a)
+Fractal distribution, (b) random distribution, (c) exponentially
+correlated distribution.
+</figcaption>
+</figure>
+
+The mechanical behavior of these composites was studied using finite
+element models. The matrix was modeled with a bilinear model (linear
+elastic of Young’s modulus `\(E_1\)`), and linear hardening beyond the yield
+stress). Inclusions are considered linear elastic in all cases, with
+Young’ s modulus `\(6E_1\)`. The composite has also a bilinear response when
+loaded uniaxially. The slope of the elastic region is denoted by `\(E_e\)`
+(effective elastic modulus), while the slope of the stress-strain curve
+after the yield point is denoted by `\(E_p\)`. Figure 14 shows the effective
+moduli `\(E_e\)` and `\(E_p\)` for various systems. The open symbols show results
+for the random microstructures. Each symbol represents the average of
+100 realizations of the respective composite. The various filled symbols
+represent results for fractal microstructures. As the fractal dimension
+increases, the symbols move farther from the continuous black line which
+was fitted to the open symbols. The yellow lines represent the
+Hashin-Shtrikman bounds for the random microstructures. In (b), the
+crosses represent data for the exponentially correlated microstructures
+shown in Fig. 13(c).
+
+It is concluded that the distribution of inclusions has a strong
+influence on the mechanical response of the composite. As the range of
+spatial correlations of the distribution increases, the composites are
+stiffer and strain harden more once in the plastic range.
+
+<figure>
+<div class="row">
+    <div class="col-md-6">
+        <img src="mechanics-of-materials-with-fractal-microstructure/figure5a.jpg" class="img-responsive" alt="Figure 5a">
+    </div>
+    <div class="col-md-6">
+        <img src="mechanics-of-materials-with-fractal-microstructure/figure5b.jpg" class="img-responsive" alt="Figure 5b">
+    </div>
+</div>
+<figcaption>
+<b>Figure 5:</b> Variation of (a) the elastic modulus \( \frac{E_e}{E_1}\), and (b) strain hardening rate \(\frac{E_p}{E_1}\) with the volume fraction, for microstructures with randomly distributed inclusions (open symbols) and fractal microstructures (various filled symbols). \(E_1\) represents the matrix modulus. 
+</figcaption>
+</figure>
+
+The damping behavior of these composites has been studied in the second
+phase of the project. This is relevant for many applications in which
+composites are used to absorb energy. In such situations, it is useful
+to inquire how should the inclusions be distributed in order to obtain
+maximum damping at given volume fraction of filler material. The
+objective of this section is to provide a quantitative assessment of
+this issue and to determine the role of the spatial correlation of the
+distribution of inclusions in defining the damping behavior of the
+composite.
+
+For subcritical damping, the damping ratio:
+
+ `\[\zeta_{r} = - \frac{\sigma_{r}}{\sqrt{\sigma_{r}^{2} + \omega_{r}^{2}}}\]`
+
+is the ratio between the damping coefficient and the critical damping
+coefficient for mode `\(r\)`.
+
+Figure 15 shows the damping ratio for the lowest eigenfrequency mode,
+`\(\zeta_{1}\)`, function of the volume fraction of inclusions for various
+systems. The open symbols and the thick line correspond to the random
+distribution of inclusions, while the other symbols correspond to
+fractal microstructures with various fractal dimensions.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+        <img src="mechanics-of-materials-with-fractal-microstructure/figure6.jpg" class="img-responsive" alt="Figure 6">
+    </div>
+</div>
+<figcaption>
+<b>Figure 6:</b> Variation of the damping ratio for the lowest eigenfrequency mode, with the volume fraction for composites with random (open circles) and fractal microstructures (filled symbols). 
+</figcaption>
+</figure>
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+        <img src="mechanics-of-materials-with-fractal-microstructure/figure7.jpg" class="img-responsive" alt="Figure 7">
+    </div>
+</div>
+<figcaption>
+<b>Figure 7:</b> Enhancement of the damping ratio in fractal microstructures relative to the random microstructures of same volume fraction, versus the fractal dimension, D. 
+</figcaption>
+</figure>
+
+As the fractal dimension increases, the departure from the random case
+is more pronounced.
+
+All fractal structures considered exhibit enhancements relative to the
+corresponding random cases, the increase being function of the fractal
+dimension. Figure 16 shows the percentage increase of the damping ratio
+relative to the random case of same volume fraction versus the fractal
+dimension, for all cases considered.
+
+**In conclusion,** it is observed that composites with fractal
+microstructures are stiffer and have larger strain hardening rates, the
+effect increasing with the fractal dimension. A pronounced effect
+results when both materials are elastic, but energy dissipation is
+allowed within fillers. In this case, fractal microstructures dissipate
+up to 100% more energy than the random microstructures of same filler
+volume fraction.
+
+Therefore, microstructures with long-range correlated distributions of
+inclusions are preferable in some applications, as they exhibit
+significantly different behavior relative to that of composites with
+random distribution of inclusions. The mechanical response of fractal
+microstructures depends on the range of scales of the fractal hierarchy
+and indirectly on the model size.
+
+# Effect of fluctuations in local material properties 
+
+The goal of the present study is to explore part of the design space
+associated with the composite composition. To this end, the constraint
+on the number of constituents in the composite is relaxed and we study
+the effect on the effective behavior of allowing spatial fluctuations of
+material properties, while keeping the mean of the distributions of
+these properties constant.
+
+To this end, we consider three types of model composites (Fig. 17): Type
+1 – composites with homogeneous elastic-plastic matrix and linear
+elastic inclusions of stiffness sampled from a distribution function.
+The mean of this distribution is kept constant and we investigate the
+effect of its variance on the homogenized response of the composite;
+Type 2 – composites with spatial variability in the elastic-plastic
+material parameters of the matrix, and with no inclusions. Similarly,
+the mean of the distribution is kept constant and the variable of the
+problem is its variance; Type 3 – composites of Type 2 in which
+inclusions are embedded. These inclusions are much smaller than the
+wavelength of matrix fluctuations and their stiffness is significantly
+higher than that of the matrix in all cases. All inclusions have the
+same stiffness in this case. In all models considered, the spatial
+distribution of inclusions and of matrix property fluctuations are
+random. This allows separating the effect of variability in the
+constituent properties from that of the spatial correlations.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+        <img src="mechanics-of-materials-with-fractal-microstructure/figure8.jpg" class="img-responsive" alt="Figure 8">
+    </div>
+</div>
+<figcaption>
+<b>Figure 8:</b> Fig. 17. Models of types 1 (a), 2 (b) and 3 (c) used in this study. The grey levels represent the value of the local stiffness. 
+</figcaption>
+</figure>
+
+For Type 1 composites we observe that Young’s modulus of the composite
+decreases with increasing the coefficient of variation of the
+distribution of inclusion stiffness, `\(c_E\)`. This variation is shown in
+Fig. 18 for two values of the filling fraction, `\(f\)`. We also observe
+that the strain hardening rate in the plastic range is not sensitive to
+`\(c_E\)`.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+        <img src="mechanics-of-materials-with-fractal-microstructure/figure9.jpg" class="img-responsive" alt="Figure 9">
+    </div>
+</div>
+<figcaption>
+<b>Figure 9:</b> 
+Composite Young’s modulus for Type 1 composites function of
+the coefficient of variation of the distribution of filler stiffness. F
+represents the filler volume fraction. The vertical axis is normalized
+by the modulus of the composite with identical inclusions \((c_E = 0)\).
+</figcaption>
+</figure>
+
+Figure 19 shows the effect of `\(c_{E}\)` on the effective modulus,
+`\({\overset{\overline{}}{E}}^{*}\)`, effective yield stress
+`\({\overset{\overline{}}{\sigma}}_{y}^{*}\)` and effective strain
+hardening, `\({\overset{\overline{}}{E}}_{p}^{*}\)`, for Type 2 `\((f = 0)\)`
+and Type 3 (`\(f=5%\)` and 17%) composites. Figure 19(a) shows the modulus
+normalized with the modulus of the composite with no matrix
+fluctuations. A much stronger softening effect is observed compared with
+the Type 1 case (Fig. 18), with a relative decrease of 5% at a value of
+`\(c_{E}\)` one order of magnitude smaller than that leading to the same
+softening as in Fig. 18.
+
+Matrix fluctuations lead to enhanced strain hardening,
+`\({\overset{\overline{}}{E}}_{p}^{*}\)`, which increases with increasing
+`\(c_{E}\)` (Fig. 19(b)) for Type 2 composites. This effect is gradually
+eliminated when the filler density, `\(f\)`, increases. The effect of matrix
+fluctuations on the effective yield stress is strong (Fig. 19(c)).
+Fluctuations decrease the yield stress.
+
+<figure>
+<div class="row">
+    <div class="col-md-4">
+        <img src="mechanics-of-materials-with-fractal-microstructure/figure10a.jpg" class="img-responsive" alt="Figure 19a">
+    </div>
+    <div class="col-md-4">
+        <img src="mechanics-of-materials-with-fractal-microstructure/figure10b.jpg" class="img-responsive" alt="Figure 19b">
+    </div>
+    <div class="col-md-4">
+        <img src="mechanics-of-materials-with-fractal-microstructure/figure10c.jpg" class="img-responsive" alt="Figure 19c">
+    </div>
+</div>
+<figcaption>
+<b>Figure 10</b>
+Variation of Types 2 and 3 composite elastic-plastic
+parameters, (a) ${\overset{\overline{}}{E}}^{*}$, (b)
+${\overset{\overline{}}{E}}_{p}^{*}$ and (c)
+${\overset{\overline{}}{\sigma}}_{y}^{*}$, with $c_{E}$, for composites
+with \(f = 0%\) (Type 2, squares), 5% (Type 3, triangles) and 17% (Type 3,
+circles). The vertical axes are normalized with the value of the
+respective parameter for composites with no stochastic
+composition$\ c_{E} = 0$.
+</figcaption>
+</figure>
+
+
+**In conclusion**, allowing spatial variability in the matrix
+constitutive properties or in the properties of the reinforcing phase
+leads to the reduction of Young’s modulus, the yield stress and of the
+strain hardening of the composite.
+
+# Publications
+{% bibliography --file Materials with Hierarchical Fractal Microstructure %}

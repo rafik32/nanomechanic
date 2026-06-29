@@ -1,0 +1,9 @@
+<script>
+$(document).ready(function(){
+    $('.abstract').hide();
+
+   $('.btn').click(function(){
+       $('#'+$(this).attr('key')).toggle();
+   });
+});
+</script>

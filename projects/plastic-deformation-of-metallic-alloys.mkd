@@ -1,0 +1,430 @@
+---
+layout: project
+title: Plastic Deformation of Metallic Alloys
+sponsors:
+    - name: NSF-Europe Materials Research Collaboration
+      note: >
+             <h4>Award Number: 0502891</h4>
+    - name: National Science Foundation
+      link: http://www.nsf.gov
+      note: >
+             <h4> Award Number: CMS - 0084987 </h4>
+             <small>Any opinions, findings, and conclusions or recommendations 
+             expressed in this material are those of the author(s) and do not 
+             necessarily reflect the views of the National Science Foundation</small>
+    - name: Aluminum Company of America
+      link: http://www.alcoa.com
+      
+faculty:
+    - name: Catalin Picu
+      title: Professor
+    - name: Antoinette M. Maniatty
+      title: Professor
+    - name: Frederic Barlat
+      title: Professor, Pohang University of Science and Technology, South Korea
+students:
+    - name: Renge Li
+      title: Graduate Research Assistant
+    - name: Zhijie Xu 
+      title: Graduate Research Assistant
+    - name: Monica Soare
+      title: Graduate Research Assistant
+    - name: Dawei Zhang
+      title: Graduate Research Assistant
+toc: true
+---
+# Introduction
+Commercial aluminum alloys have a favorable strength to weight ratio. If aluminum structural components could increasingly be used in vehicles, significant weight savings could be realized. This would, in turn, lead to reductions in fuel requirements and emissions. However, it is not currently economical to use aluminum for many components because aluminum alloys with the desired strength properties, lack the desired formability. If a manufacturer wants to form the same part from aluminum that is currently formed from steel, for example, it is generally necessary to process at an elevated temperature, instead of room temperature, driving up costs.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+        <img src="plastic-deformation-of-metallic-alloys/figure1.png" class="img-responsive" alt="Figure 1">
+    </div>
+</div>
+<figcaption>
+<b>Figure 1:</b> Stress-strain curves for a Al-Mg alloy (5086) tested in tension at different strain rates and temperatures. Serrated flow is observed at the low strain rate in the annealed material only.
+</figcaption>
+</figure>
+
+Commercial aluminum alloys get their strength from alloying elements, such as magnesium, in solid solution. These same alloying elements cause the poor formability through a process called dynamic strain aging. Dynamic strain aging (DSA) is manifested by a negative strain rate sensitivity, which results in unstable, jerky flow (Fig. 1 by {% cite wagenhofer_influences_1999 %} ), the so-called Portevin-LeChatelier effect. In addition, surface markings, sometimes referred to as DSA bands, are commonly observed in conjunction with the DSA effect (Figs. 2 and 3). At smaller strains, irregular bands form with a flame-like shape. At higher strains, regular parallel bands form at a characteristic angle with the tensile specimen. Dynamic strain aging in commercial aluminum alloys is due to the presence of fast diffusing solute atoms in the matrix that interact with dislocations. These interactions lead to unsteady, collective motion of dislocations within grains and across grain boundaries, which, in turn, cause the observed jerky flow and surface markings.
+
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+        <img src="plastic-deformation-of-metallic-alloys/figure2.jpg" class="img-responsive" alt="Figure 2">
+    </div>
+</div>
+<figcaption><b>Figure 2:</b> Dynamic strain aging bands in Al-3.5%Mg alloy, left shows initial bands, right shows shows secondary bands after more straining {% cite phillips_yieldpoint_1953%}.
+</figcaption>
+</figure>
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+        <img src="plastic-deformation-of-metallic-alloys/figure3.jpg" class="img-responsive" alt="Figure 3">
+    </div>
+</div>
+<figcaption><b>Figure 3:</b> Dynamic strain aging bands in Al-Cu alloy, initial band formation {% cite hooper_influence_1953 %}.
+</figcaption>
+</figure>
+
+The objective of this research is to develop a better fundamental understanding of the physical processes of dynamic strain ageing and those leading to PLC. The study is focused on Al-Mg alloys. This will guide alloy developers to design aluminum alloys with higher formability and will increase the use of aluminum in the body and structure automotive market.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+        <img src="plastic-deformation-of-metallic-alloys/figure4.jpg" class="img-responsive" alt="Figure 4">
+    </div>
+</div>
+<figcaption><b>Figure 4:</b> Inhomogeneous stress distribution in polycrystalline copper sheet (A. M. Maniatty, 2000).
+</figcaption>
+</figure>
+
+A multi-scale approach is used. At the atomistic scale, new simulation tools have been developed and used to model the interaction between solute and dislocations. Meso-scale models of dislocation-dislocation interaction were used to predict the collective behavior of dislocations in the presence of solute clusters. These models are calibrated using parameters determined from the atomistic simulations. Results from meso-scale simulations will be used as a basis for a continuum crystal plasticity constitutive theory. Polycrystalline simulations will be performed to predict the macroscopic behavior and account for the grain scale heterogeneity (Figure 4). Experiments have been performed at various temperatures and strain rates in order to produce sufficient data for validation and calibration of the models.
+
+At the atomic scale we study the interaction of dislocations with solute atoms. The objectives of this part of the work are to investigate the dynamics of clustering and to estimate how this process affects the critical resolved shear stress required to keep dislocations moving. For an effective decoupling of clustering and collective dislocation behavior, the dislocation structure is kept at a minimum in these models. Two configurations are investigated in separate simulations: a single stationary dislocation, and two dislocations forming a junction. The outcome of these models consists in a) a detailed understanding of how solute atoms interact with dislocations, b) a quantitative evaluation of parameters that enter macroscopic phenomenological models describing dynamic strain aging. 
+
+At the grain scale, we modify the constitutive laws for crystal plasticity to incorporate effects of dynamic strain aging. While it is acknowledged that the complete constitutive laws for crystal plasticity cannot be determined from atomic and meso-scale simulations, the constitutive laws defined must be consistent with such smaller scale models. Our experimental results as well as data from the literature are being used in the constitutive model development and validation. These new constitutive laws will be used to study how dynamic strain aging leads to negative strain rate sensitivity and localization on the polycrystal scale.
+
+# Approach
+ A scale-linking computational approach is used to investigate dynamic strain aging in aluminum alloys. Two mechanisms are assumed to play the essential role in controlling the phenomenon: the interaction of migrating solute atoms with dislocations and the collective motion of dislocations. Their interplay is believed to be important. To date, however, there is no systematic study aimed at de-convoluting the underlying physics. Our work seeks a solution to this problem. At each scale the objective is twofold: to gain insight into the relevant physics, and to derive relevant parameters to be used in phenomenological macroscopic models. 
+
+At the atomic scale we study the interaction of dislocations with solute atoms. The objectives of this part of the work are to investigate the dynamics of clustering and to estimate how this process affects the critical resolved shear stress required to keep dislocations moving. For an effective decoupling of clustering and collective dislocation behavior, the dislocation structure is kept at a minimum in these models. Two configurations are investigated in separate simulations: a single stationary dislocation, and two dislocations forming a junction. The outcome of these models consists in a) a detailed understanding of how solute atoms interact with dislocations, b) a quantitative evaluation of parameters that enter macroscopic phenomenological models describing dynamic strain aging. 
+
+At the grain scale, we modify the constitutive laws for crystal plasticity to incorporate effects of dynamic strain aging. While it is acknowledged that the complete constitutive laws for crystal plasticity cannot be determined from atomic and meso-scale simulations, the constitutive laws defined must be consistent with such smaller scale models. Our experimental results as well as data from the literature are being used in the constitutive model development and validation. These new constitutive laws will be used to study how dynamic strain aging leads to negative strain rate sensitivity and localization on the polycrystal scale.
+
+# Results
+## A New Mechanism for Dynamic Strain Ageing
+The combined effort, including macroscopic experimentation, atomistic and mesoscopic modeling led us to the conclusion that the existing models for dynamic strain ageing are based on mechanisms that cannot explain the experimental observations, at least in the Al-Mg system. It led us to propose a new mechanism for the phenomenon. An abstract of these findings is presented next. Further details are given below.
+
+## History
+
+ Generically, the negative SRS and PLC effects are associated with the interaction of solute atoms with dislocations, process known as dynamic strain ageing (DSA). The mechanism of DSA has been a matter of debate for the last several decades. The first model was developed by Cottrell who considered that, above a certain temperature, solute atoms are mobile enough to travel along with dislocations. If the mobile dislocations move at low velocities, the mechanism would lead to an increased friction force. However, at higher deformation rates, the dislocation may lose its cloud, hence requiring a smaller resolved shear stress for motion. This leads to negative SRS.
+
+
+Subsequently, it was observed that dislocations do not move at constant velocity, rather they travel fast between obstacles (e.g. forest dislocations) and are arrested a relatively long time before overcoming the respective barrier. Furthermore, it was shown that solute mobility is rather limited and the Cottrell mechanism is not plausible. Nevertheless, solute clustering may take place at mobile dislocations while they are arrested at obstacles. A quantification of this mechanism was proposed by van den Beukel who envisioned that clustering occurs by bulk diffusion to the mobile dislocation line during the arrest time. This leads to an apparent increase of the lock strength. The increase depends on the size of the cluster which, in turn, is controlled by the bulk diffusion coefficient and the waiting time. 
+
+
+Neither this model survived the test of time and detailed experimentation. It was concluded that bulk diffusion is too slow to lead to significant clustering at mobile dislocations if an excess of vacancies does not exist in the material (excess with respect to the thermodynamic equilibrium vacancy concentration at given temperature). It was proposed that deformation itself may enhance the vacancy concentration which, in turn, would speed-up solute diffusion. However, experiments by Cuddy and Leslie and other authors clearly indicated that vacancies are not the decisive ingredient in DSA. 
+
+
+It was then suggested that diffusion of solute along the core of dislocations, pipe diffusion, might take place without being assisted by vacancies. This is presumably due to the larger free volume in the core region and to the large strains leading to lower activation energies for diffusion. Mulford and Kocks developed a model of DSA based on this concept. The mechanism leads to an increase of the lock strength with the arrest time.
+
+## New Findings
+
+ Our first contribution to this topic is to check the conjectures behind the pipe diffusion-based mechanism {% cite picu_atomistic_2004 %}. To this end, we performed an atomistic analysis of Mg diffusion along the core of dislocations in Al. The activation energy for diffusion in the bulk and along the core of various types of dislocations in Al was evaluated in the dilute solute concentration limit. The activation energies for bulk diffusion are 1.22 eV for the vacancy-assisted mechanism, and over 3 eV in absence of vacancies. The first figure is in excellent agreement with the experimental value. The finding confirms that bulk diffusion must be vacancy-assisted. The analysis was repeated for diffusion along the core of dislocations where the minimum activation energy path was searched. The results indicate that, similar to the bulk, solute diffusion which is not vacancy-assisted is energetically prohibitive in the core. In addition, the region of the core in which the vacancy-assisted mechanism has activation energies lower than in the bulk is rather small, on the order of 2-3 lattice spacings (i.e. the core is a "narrow pipe"). Hence, it appears that, if one discards the idea that vacancies are important in DSA, pipe diffusion is too slow to produce significant strengthening of junctions during the arrest time of mobile dislocations (about 0.01 to 10 s, depending on the strain rate).
+
+We recently proposed a new mechanism for DSA that avoids this discussion {% cite picu_mechanism_2004 %}. It was envisioned that solute atoms cluster at forest dislocations, the process being possible since forests are stationary for much longer time intervals than the arrest time of mobile dislocations. A straightforward estimation shows that the ageing time of forest dislocations is, in average, more than 50 times longer than the arrest time of mobile dislocations. The presence of solute clusters on forest dislocations leads to an increase of the strength of junctions formed by mobile and forest dislocations and therefore, to an increase of the flow stress. The rise is larger as the cluster size increases. The cluster size on forests depends on their ageing time, i.e. the time lapsed from the formation of the respective forest segment, or the time the forest is stationary. In turn, the ageing time depends on the rate of forest production and the imposed strain rate. Since, DSA is associated with solute clustering at forest dislocations, the dynamics of solute clustering is not coupled with that of mobile dislocations, rather its time scale is that of the overall deformation process (the duration of the test).
+
+### Studies of Mg clustering in Al in presence of crystalline defects and in the un-dislocated material
+Small Mg clusters exist in Al at room temperature and below. This observation is significant because the interaction of dislocations with small Mg clusters is fundamentally different than that with isolated impurity atoms. Furthermore, clustering modifies Mg diffusion rates and mechanism. We investigated, by means of atomistic simulations, the size and shape of a stable cluster, the temperature limit for cluster stability, and whether clustering is influenced by the presence of a *homogeneous* strain field.
+
+#### A) Clustering in the un-dislocated material
+#####  Influence of temperature on the cluster stability
+By means of MC simulations performed at various temperatures it was found that two Mg atoms located along the <110> axis at a distance of 
+
+`\[a_0\sqrt{2}\]`
+
+(`\(a_0\)` is the lattice parameter) decreases the total energy of the system compared with the case when their location is arbitrary (Fig. 1). The binding energy is rather large, -0.032 eV. At 0K, a large cluster forms in the {111} plane. This corresponds to the stability domain of the Al2Mg2 phase. The pair unbinds at temperatures above 350˚C.
+
+Figure 6 shows the pair distribution function for Mg atoms. A Mg atom is located at `$r = 0$`. The average Mg number density (5%) is recovered at large distances from the representative Mg (large `$r$`). A peak in Mg density is observed at
+
+`\[r=a_0\sqrt{2}\]`
+
+with the height of the peak being temperature dependent. The peak disappears at temperatures higher than 350˚C.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+        <img src="plastic-deformation-of-metallic-alloys/figure5.jpg" class="img-responsive" alt="Figure 5">
+    </div>
+</div>
+<figcaption>
+<b>Figure 5:</b> Variation of the total energy of a system of two Mg atoms in an Al lattice with the separation distance between the Mg at 0K. The reference energy corresponds to the "dilute limit", i.e. the configuration in which the two Mg atoms are far enough not to interact with each other. A negative energy difference indicates propensity for clustering. Note that a unit of the horizontal axis represents a different physical length for each crystallographic direction: 2.85 along <110>, 4.032 along <100>, and 6.98 along <111>.
+</figcaption>
+</figure>
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+        <img src="plastic-deformation-of-metallic-alloys/figure6.jpg" class="img-responsive" alt="Figure 6">
+    </div>
+</div>
+<figcaption>
+<b>Figure 6:</b> Density of Mg neighbors as a function of distance from a representative Mg atom. The depletion layer at r <2.2> is due to the excluded volume effect. The average density is 5%, as imposed. The spike corresponds to "clustering." The number of Mg atoms in the "cluster" is 2 up to 3 for all temperatures indicated.
+</figcaption>
+</figure>
+
+#####  Influence of a homogeneous hydrostatic strain field on cluster stability
+It is known that changing pressure (dilatation) leads to a change in Mg concentration at constant chemical potential. It is interesting to determine whether this influences the stability of the Mg dipole. Using MC simulations at room temperature and in presence of tensile and compressive hydrostatic stress/strain it was found that the dipole/triplet is stable even at dilatation strains as high as 2% (comparable to those found within 3 Burgers vectors from a dislocation core). Figure 7 shows the Mg pair distribution function at room temperature and at zero pressure and 2% dilatation.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+        <img src="plastic-deformation-of-metallic-alloys/figure7.jpg" class="img-responsive" alt="Figure 7">
+    </div>
+</div>
+<figcaption>
+<b>Figure 7:</b> Density of Mg neighbors as a function of distance from a representative Mg atom at room temperature and for three dilatation strains. The cluster configuration and size is independent of strain.
+</figcaption>
+</figure>
+
+The variation of solute concentration with strain at constant chemical potential was investigated. The stable Mg concentration was determined in Al subjected to various hydrostatic and purely deviatoric strains and the results are shown in Fig. 4. The variation of the solute concentration with dilation strain departs from the theoretical prediction {% cite hirth_theory_1992 %} since Mg are weakly interacting. Deviatoric strains do not influence solute concentration, as expected.
+
+
+<figure>
+<div class="row">
+    <div class="col-md-6">
+        <img src="plastic-deformation-of-metallic-alloys/figure8a.jpg" class="img-responsive" alt="Figure 8a">
+    </div>
+    <div class="col-md-6">
+        <img src="plastic-deformation-of-metallic-alloys/figure8b.jpg" class="img-responsive" alt="Figure 8b">
+    </div>
+</div>
+<figcaption>
+<b>Figure 8:</b> Dependence of Mg concentration on applied strain <b>left)</b> hydrostatic and deviatoric <b>right)</b> at constant chemical potential.
+</figcaption>
+</figure>
+
+#### B) Clustering in the un-dislocated material
+The cluster surrounding two dislocations of opposite sign (a dipole) at room temperature is shown in Fig. 5. The chemical potential was kept constant in these simulations, the situation corresponding to a low dislocation density (a large Mg reservoir is available). Close to the core atomistic details become important. Fig.5b shows layering of Mg atoms in {111} planes on one side of the core, an effect related to that discussed in connection with Fig. 1. Note also clustering of Mg on the stacking fault of the dissociated dislocation in b).
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+        <img src="plastic-deformation-of-metallic-alloys/figure9.jpg" class="img-responsive" alt="Figure 9">
+    </div>
+</div>
+<figcaption>
+<b>Figure 9:</b> <b>a)</b> Mg concentration distribution in the neighborhood of an edge dipole, <b>b)</b> Detail of the cluster near the core showing layering of Mg in {111} planes.
+</figcaption>
+</figure>
+
+### Experimental investigation of the strain rate sensitivity of Al-Mg 5182-O
+ Uniaxial tensile tests were performed on Al-Mg 5182-O alloy supplied by ALCOA in order to determine its strain rate sensitivity (SRS). The SRS was measured from constant strain rate experiments and from strain rate jump tests performed at several temperatures in the range 0 to 110˚C and strain rates (1/10000, 1/1000 and 1/100 1/s). The effect of texture and that of the base strain rate on the measured SRS were evaluated.
+
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+        <img src="plastic-deformation-of-metallic-alloys/figure10.jpg" class="img-responsive" alt="Figure 10">
+    </div>
+</div>
+<figcaption>
+<b>Figure 10:</b> True stress-strain curve obtained from a constant strain rate test 1/10000 (1/s) at room temperature.
+</figcaption>
+</figure>
+
+The SRS parameter
+
+`\[m=\frac{Log\left(\sigma_{flow}^{Rate1}/\sigma_{flow}^{Rate2}\right)}{\left(\varepsilon^{Rate1}/\varepsilon^{Rate2}\right)}\]`
+
+was measured from the curves obtained at constant strain rate. Three different temperatures were considered. The SRS is negative at all strains at room temperature and at 50˚C, while at 110˚C it becomes positive at about 5% plastic strain.
+
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+        <img src="plastic-deformation-of-metallic-alloys/figure11.jpg" class="img-responsive" alt="Figure 11">
+    </div>
+</div>
+<figcaption>
+<b>Figure 11:</b> Strain rate sensitivity parameter evaluated from constant strain rate tests at various temperatures.
+</figcaption>
+</figure>
+
+####  Strain rate jump tests
+Figure 12 shows a typical true stress-strain curve obtained from strain rate jump tests. In this test the strain rate was changed abruptly from 1/10000 (base rate) to 1/100 1/s and back three times. Serrations are present at all rates. The negative rate sensitivity is obvious from the plots (flow stress at higher rate is lower than that at the lower rate and at same plastic strain).
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+        <img src="plastic-deformation-of-metallic-alloys/figure12.jpg" class="img-responsive" alt="Figure 12">
+    </div>
+</div>
+<figcaption>
+<b>Figure 12:</b> True stress-strain curve obtained from a strain rate jump test at room temperature.
+</figcaption>
+</figure>
+
+The strain rate sensitivity parameter, m, was measured at each jump point. Tests were performed at 0˚C, 20˚C, 50˚C, 80˚C and 110˚C. Additional tests were performed at 35˚C. The SRS parameter is shown as a function of strain in Fig. 9 for all investigated temperatures.
+
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+        <img src="plastic-deformation-of-metallic-alloys/figure13.jpg" class="img-responsive" alt="Figure 13">
+    </div>
+</div>
+<figcaption>
+<b>Figure 13:</b> Strain rate sensitivity parameter obtained from strain rate jump tests.
+</figcaption>
+</figure>
+
+ The data in Fig. 9 are in good agreement with the data measured in constant strain rate experiments (Fig. 7). The smallest m (most negative) is obtained at 50˚C, while at 110˚C m becomes positive at strains larger than about 4%. Both conclusions are similar to those obtained from constant strain rate tests.
+
+It was found that texture does not affect m within the accuracy of the present measurements. Consistent with the literature (on other material systems), m did not depend on the magnitude of the strain rate jump imposed (m is same computed from tests with jumps from 1/10000 to 1/1000 1/s and from tests with jumps from 1/10000 to 1/100 1/s).
+
+#### Studies of Mg diffusion along the core of dislocations in Al (pipe diffusion)
+Solute diffusion in an Al rich binary Al-Mg alloy was studied by means of atomistic simulations. The activation energy for diffusion of Mg in the bulk was evaluated in the dilute solution limit for the nearest neighbor and the ring mechanisms. The computed activation energy for vacancy-assisted bulk diffusion was 1.22 eV, in excellent agreement with experimental observations. Both the direct interchange and the ring mechanism were considered. The direct interchange mechanism leads to lower activation energies and therefore is energetically favored. In absence of vacancies, the direct interchange (of a Mg atom with a neighboring Al) mechanism leads to activation energies in excess of 3 eV and hence, the mechanism does not operate at temperatures in the vicinity of room temperature. This analysis confirms the current understanding that bulk diffusion at low and moderate temperatures must be assisted by vacancies. Further, diffusion of Mg along the core of edge, 60˚C and screw dislocations was studied. The activation energy for vacancy formation in the core and for vacancy-assisted Mg migration was evaluated for a large number of diffusion paths in the core region. We searched for the path with the minimum activation energy. The analysis is performed in the dilute MG concentration limit (only one Mg is present in the simulation cell at given time). It was concluded that, similar to the bulk, Mg diffusion in absence of vacancies is energetically prohibitive. The paths of minimum activation energy are identified for vacancy-assisted diffusion, for all three types of dislocations. The lowest energy path is found in the core of the 60o dislocation, its activation energy being 60% of the activation energy in the bulk (vacancy-assisted diffusion). Most diffusion paths have activation energies larger than 75% of the equivalent bulk quantity. The same analysis performed in absence of vacancies leads to very large activation barriers. This suggests that the situation is similar to that in the bulk: diffusion of Mg must be assisted by vacancies at room temperature. Furthermore, these data show that pipe diffusion, which is currently considered as the leading mechanism for dynamic strain aging is too slow in absence of excess vacancies (excess compared with the thermodynamically stable equilibrium concentration at current temperature).
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+        <img src="plastic-deformation-of-metallic-alloys/figure14.jpg" class="img-responsive" alt="Figure 14">
+    </div>
+</div>
+<figcaption>
+<b>Figure 14:</b> Energy map of the transition associated with the ring mechanism in the bulk. An Al atom, a Mg atom and a vacancy rotate in the close packed plane {111}. The mechanism breaks down in two steps: first the Mg atom moves into the vacancy, then the vacancy replaces the Al atom. The activation barriers for the two processes are shown (0.51 and 0.7 eV).
+</figcaption>
+</figure>
+
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+        <img src="plastic-deformation-of-metallic-alloys/figure15.jpg" class="img-responsive" alt="Figure 15">
+    </div>
+</div>
+<figcaption>
+<b>Figure 15:</b> Core structure of a 60 dislocation in Al. The core splits into two partial dislocations separated by a stacking fault. The dislocation line is perpendicular to the figure, hence, pipe diffusion (along the core) should happen (preferentially) in the into-the-page direction. All numbered sites were considered as potential paths for diffusion and Mg migration along all 3 directions shown on the right (top view of the glide plane) were considered for each site. The minimum energy paths are 4,5,6 and 7. The "pipe" is very narrow.
+</figcaption>
+</figure>
+
+####  Studies of the effect of clustering at forest dislocations on the strength of dislocation junctions
+ The above analysis suggests that Mg clustering at mobile dislocations during their arrest time at forests (as the current theory of DSA requests) is not possible. Diffusion is too slow. Clustering at forest dislocations though is possible since these defects are stationary a much longer time (in average, about 50 times longer than mobile dislocations at any strain rate). Hence, it is useful to consider the case in Fig. 12 in which an unclustered mobile dislocation interacts with a clustered forest.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+        <img src="plastic-deformation-of-metallic-alloys/figure16.jpg" class="img-responsive" alt="Figure 16">
+    </div>
+</div>
+<figcaption>
+<b>Figure 16:</b>  Schematic representation of a generic dislocation junction in the absence of applied stress. CD represents the forest dislocation residing in a cluster of solute atoms (represented schematically by filled dots). AB is the mobile dislocation. The thick continuous lines represent the configuration of the junction after relaxation. Note that the forest is still pinned by its cloud along CE' and DF'.
+</figcaption>
+</figure>
+
+The question is how the presence of the cluster affects the strength of such junction. This analysis was performed by using an anisotropic line tension model for the dislocations and imposing an energy penalty for un-binding of the forest from its cluster. Figure 17 shows that, as the binding energy Q/A increases (cluster increases in size), the critical resolved shear stress required to break the junction t* increases and then reaches a plateau.
+
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+        <img src="plastic-deformation-of-metallic-alloys/figure17.jpg" class="img-responsive" alt="Figure 17">
+    </div>
+</div>
+<figcaption>
+<b>Figure 17:</b> The dependence of the symmetric Lomer-Cottrell lock strength on the binding energy of the forest dislocation to its cluster.
+</figcaption>
+</figure>
+
+ The observation that the junction strength varies with the cluster size leads to a new mechanism for dynamic strain ageing. This mechanism is based on the idea that clusters form on forest dislocations rather than on the mobile dislocations, as assumed in the existing theories. Forest dislocations are generated during plastic deformation along with the mobile dislocations. Since they reside in planes subjected to a lower resolved shear stress, their residence time is considerably longer than that of mobile dislocations. The longer the residence time of forest dislocations, the larger the cluster they acquire and therefore the larger Q/A. As seen in Fig. 13, for small Q/A (smaller than 0.3), the junction strength increases with the binding energy and it is immediately obvious that this leads to negative strain rate sensitivity: deformations at small strain rates imply longer ageing times for forests and therefore larger junction strength, while the opposite holds for deformations performed at large strain rates. The conclusion preserves for Q/A > 0.3. This mechanism was captured into a constitutive formulation able to predict the strain rate sensitivity parameter. Figure 18 shows a comparison of the model predictions with the experimental results (see also the experimental section). Figure 19 shows a map of the negative strain rate sensitivity in the strain rate-temperature plane. The data points show conditions (rate-temperature) in which the negative SRS effect was observed in experiments. The curves are model predictions. The agreement is very good. In fact, the model developed here captures most features of the DSA phenomenon, which provides confidence that the right physics is captured.
+
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+        <img src="plastic-deformation-of-metallic-alloys/figure18.jpg" class="img-responsive" alt="Figure 18">
+    </div>
+</div>
+<figcaption>
+<b>Figure 18:</b> The transient component of the SRS parameter m, mt, as a function of strain. The data points are experimental values, while the lines are model predictions.
+</figcaption>
+</figure>
+
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+        <img src="plastic-deformation-of-metallic-alloys/figure19.jpg" class="img-responsive" alt="Figure 19">
+    </div>
+</div>
+<figcaption>
+<b>Figure 19:</b> Negative strain rate sensitivity map in the inverse temperature-strain rate plane. The curves represent the total SRS parameter, m, predicted by the model, while the data points represent conditions in which negative SRS was observed experimentally in an Al-Mg alloy. In experiments, the material does not exhibit negative SRS at strain rates larger than \(10^{-1}\,s^{-1}\), while test data at strain rates lower than \(10^{-6}\,s^{-1}\) are not available for this material.
+</figcaption>
+</figure>
+
+
+####  Solute Clusters Reduce the Strain Rate Sensitivity: Experimental Proof
+To demonstrate the effect of solute clusters on the strain rate sensitivity, AA5182 samples were heat treated in the solid solution domain and then quenched to -40C. These samples were divided in two batches: one was tested immediately, while the other was kept at room temperature for 48h, cooled to -40C and tested under identical conditions. Figure 20 shows the SRS parameter m versus strain for samples tested immediately after heat treatment (open symbols), and for samples that have been rested at room temperature for 48h (filled symbols). In all cases, samples tested immediately had values of m closer to zero (less negative) than the other samples. The difference between them is that the samples quenched and tested immediately had solute more uniformly distributed and contained a larger concentration of vacancies, while some degree of solute clustering has occurred in the other samples. This demonstrates that solute clustering is essential in inducing negative rate sensitivity.
+
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+        <img src="plastic-deformation-of-metallic-alloys/figure20.gif" class="img-responsive" alt="Figure 20">
+    </div>
+</div>
+<figcaption>
+<b>Figure 20:</b> SRS parameter versus strain tested at -40C for samples that have not been heat treated (Reference), samples that have been heat treated in the solid solution domain and quenched (open symbols, labeled 0h), and samples heat treated, quenched, held at room temperature for 48h, cooled to -40C and tested (labeled 48h).
+</figcaption>
+</figure>
+
+### Strain Rate Sensitivity Controlled by Obstacle-Dislocation Interaction
+ This study is motivated by the attempt to control the strain rate sensitivity of metals and alloys. The strain rate sensitivity has two components: an instantaneous component which is always positive, and a transient which may be negative or positive. If the transient is negative, it is still possible to have a positive total strain rate sensitivity parameter, case in which plastic deformation is stable. It appears that a good method to improve the strain rate sensitivity of a material (make it more positive) is to increase the instantaneous component.
+
+This study is aimed at understanding the physical factors that control the instantaneous component of the rate sensitivity, specifically, the effect of the obstacle nature, density and of the presence of multiple obstacle types in the glide plane.
+
+To investigate these mechanisms, a numerical model of a dislocation moving across a field of obstacles is used. This model was used in the past by a number of researchers. In essence, the dislocation is represented as a string of line tension G which interacts with obstacles locally (point obstacles with no long-range field). Bypassing an obstacle is a thermally activated process controlled by an Arrhenius relation: it takes place if the force the dislocation applies on the obstacle is larger than the obstacle strength or if the residence time is sufficiently long.
+
+The dislocation moves in different ways at small and large applied stresses (Fig. 17). At small stress, once an obstacle fails, the dislocation advances to the next row of obstacles and the average jump size is equal to the average area of glide plane per obstacle (unzipping). At large stress, multiple obstacles are bypassed at once before the dislocation finds another equilibrium position (jerky). The dislocation line becomes rougher, as the stress increases.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+        <img src="plastic-deformation-of-metallic-alloys/figure21.png" class="img-responsive" alt="Figure 21">
+    </div>
+</div>
+<figcaption>
+<b>Figure 21:</b> Schematic representation of a pack of three interacting dislocations performing a) unzipping and b) jerky motion. The red dashed lines represent equilibrium configurations taken by the dislocation after a release event at one pinning point of the previous stable configuration (continuous black lines). In the jerky mode the dislocation bypasses multiple obstacles. The arrows represent the confining stress acting on the outer dislocations in order to hold the pack together. The applied far field stress acts on all dislocations alike.
+</figcaption>
+</figure>
+
+Such simulations can be used to compute the critical resolved shear stress and the strain rate sensitivity for given population of obstacles. The main conclusions are:
+
+*  The effective activation energy of an ensemble is equal to the activation energy per obstacle if all obstacles in the glide plane are identical and the motion is unzipping. During jerky motion the effective activation energy for dislocation motion is not identical to that on the scale of a single obstacle.
+
+* The strain rate sensitivity is controlled by the strongest obstacles, more so that the effective critical resolved shear stress. Consider a population of weak obstacles and add just few strong ones; the critical resolved shear stress will not change much, however, the strain rate sensitivity will be almost identical to that of the population of 100% strong obstacles.
+
+* Random obstacle distribution leads to larger strain rate sensitivity than regular arrangements.
+
+* Increasing the obstacle strength reduces the strain rate sensitivity and promoted unzipping.
+
+ The situation in which the applied stress is equal to the critical resolved shear stress (zero Kelvin, h = 1 in Fig. 18), represents a critical point for this system. When the critical point is approached from below, the dynamics becomes less sensitive to the details of the system geometry and composition. Figure 22 shows the strain rate sensitivity parameter m versus the applied stress (normalized with the critical resolved shear stress) for many systems of different obstacle composition, at different temperatures and of different obstacle number density. It is seen that all data converge to a master curve.
+
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+        <img src="plastic-deformation-of-metallic-alloys/figure22.png" class="img-responsive" alt="Figure 22">
+    </div>
+</div>
+<figcaption>
+<b>Figure 22:</b> Variation of the SRS parameter with the normalized stress h in random arrays of obstacles and in the jerky motion range. The data points correspond to simulations performed at various temperatures, in arrays of various obstacle strength, in homogeneous and heterogeneous systems. A master curve is obtained close to the critical point h = 1.
+</figcaption>
+</figure>
+
+ It is also possible to compute the jump areas at various applied stresses, h. The probability distribution function of jump areas S is shown in Fig. 19. It is a power function of exponent -1, with a cut-off at large S. As the stress increases (the system approaches the critical point), the correlation length diverges and the cut-off moves to the right. The rate of divergence is larger in presence of elastic dislocation-dislocation interactions (i.e. interactions appear to bring the system closer to the critical point).
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+        <img src="plastic-deformation-of-metallic-alloys/figure23.png" class="img-responsive" alt="Figure 23">
+    </div>
+</div>
+<figcaption>
+<b>Figure 23:</b> Probability density distribution functions of dislocation jump amplitudes for a single dislocation (1d) and for the central dislocation of packs of three (3d) and five (5d) dislocations.
+</figcaption>
+</figure>
+
+It has been also observed that dislocation-dislocation interactions increase the intermittency of the plastic deformation (plastic strain). This appears to indicate that the intermittent plasticity characterized by avalanches and apparent criticality observed in experiments is due to the long-range elastic dislocation-dislocation interactions, while dislocation-obstacle interactions appear to play a less decisive role.
+
+
+# References
+
+{% bibliography --cited_in_order %}
+
+

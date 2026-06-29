@@ -1,0 +1,38 @@
+---
+layout: base
+---
+
+{% include hide_abstract %}
+    <div class="page-title"><h1>{{page.title}} <br><small>{{page.subtitle}} </small></h1></div>
+	<hr>
+    <div class="row project-head show-grid">
+        <div class="col-md-4">
+            <h2> Project Sponsors </h2>
+            {% for sponsor in page.sponsors %}
+            <h3><a href="{{ sponsor.link }}">{{ sponsor.name }}</a></h3>
+            {% if sponsor.note %}
+            {{ sponsor.note }}
+            {% endif%}
+            <hr>
+            {% endfor %}
+        </div>
+        <div class="col-md-4">
+            <h2> Current Students</h2>
+            {% for student in page.current_student %}
+            <h3>{{ student.name }}<br> <small>{{ student.title }}</small> </h3>
+            <hr>
+            {% endfor %}
+        </div>
+        <div class="col-md-4">
+            <h2> Former Students </h2>
+            {% for student in page.former_student %}
+            <h3>{{ student.name }} <br> <small>{{ student.title }}</small> </h3>
+            <hr>
+            {% endfor %}
+        </div>
+    </div> <!-- /project-head --!>
+    <div class="row">
+        <div class="col-md-12 text-justify">
+            <p class="lead">{{ content }}</p>
+        </div>
+    </div>

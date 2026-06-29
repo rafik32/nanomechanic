@@ -1,0 +1,31 @@
+---
+layout: page
+title: Research Projects
+group: navigation
+nav_weight: 2
+# make projects url into folder, so people don't
+# accidentally get the folder listing
+permalink: /projects/
+toc: true
+---
+
+## Current Research Projects
+* [Network Materials](network-materials.html)
+* [Energetic materials: mechanics under extreme conditions](energetic-materials-mechanics-under-extreme-conditions.html)
+* [Epoxy and Vitrimer Molecular Networks and Composites](epoxy-and-vitrimer-molecular-networks-and-composites.html)
+
+## Other Projects
+* [Plastic deformation of metallic alloys](plastic-deformation-of-metallic-alloys.html)
+* [Mechanics of DNA](mechanics-of-dna.html)
+* [Fracture and Fatigue in Epoxy-based Nanocomposites](fracture-and-fatigue-in-epoxy-based-nanocomposites.html)
+* [Dislocation Nucleation in Si](dislocation-nucleation-in-si.html)
+* [Mechanics of Materials with Fractal Microstructure](mechanics-of-materials-with-fractal-microstructure.html)
+* [Coupled Atomistic-continuum Modeling and Simulation](coupled-atomistic-continuum-modeling-and-simulation.html)
+* [Testing Material Behavior at the Nanoscale](testing-material-behavior-at-the-nanoscale.html)
+* [Coarse Grained Models of Polymers](coarse-grained-models-of-polymers.html)
+* [Modeling Polymer-Based Nanocomposites](modeling-polymer-based-nanocomposites.html)
+* [Polymer Dynamics-Stress Production and Relaxation](polymer-dynamics-stress-production-and-relaxation.html)
+* [Thermal Properties of Nanostructures](thermal-properties-of-nanostructures.html)
+* Stress Concentration and Crack Nucleation
+* Deformation of Titanium Alloys 
+

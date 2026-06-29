@@ -1,0 +1,256 @@
+---
+layout: project
+title: Polymer Dynamics Stress Production and Relaxation
+sponsors:
+    - name: National Science Foundation
+      link: http://www.nsf.gov
+      note: >
+             <h4>Award Number: CMS - 9908025</h4>
+             <small>Any opinions, findings, and conclusions or recommendations 
+             expressed in this material are those of the author(s) and do not 
+             necessarily reflect the views of the National Science Foundation</small>
+
+faculty:
+    - name: Catalin R. Picu
+      title: Professor
+students:
+    - name: Mihai C. Pavel
+      title: Graduate Research Assistant (2000-2002)
+toc: true
+---
+
+# Summary
+Some of the basic assumptions made in the molecular theory of polymer dynamics are compared with results obtained from atomistic simulations. In this project we develop a unified description of stress production and relaxation in polymeric systems which attempts to scale-link the atomic and molecular levels, and provides a framework in which the constitutive laws defined at larger scales are based on atomic-scale rather than on molecular-scale processes. This formalism aims at unifying the description of the fast beta-relaxation modes with that of the slower short-time alpha-modes. The fast modes are related to local atomic rearrangements and are not captured by molecular scale descriptions. The slow modes are related to bond/segment re-orientation. The new formalism being developed includes both bonded and non-bonded interactions on an equal footing and is equally valid for short and long chain molecules.
+
+# Introduction
+## Motivation
+ Polymeric materials are some of the most used materials in today's technology. They are utilized in the semi-crystalline form, as amorphous glasses and as rubbery elastomers. The diverse and, at times, unusual properties of polymers make them an object of high practical interest subject to continuously increasing research attention.
+
+Despite the remarkable advances made since the inception of the field about 70 years ago, many of the practical problems related to injection and molding still await a sound theoretical treatment that would guide the choices made by process engineers. There are well-known difficulties in designing a reliable molding process due to the complex mechanical behavior of the polymeric melt and solid. Die exit instabilities leading to cracked surfaces, post-extrusion swelling and orientation, and memory effects leading to a high processing history sensitivity are some of the most important issues that have to be solved. Knowledge of the stress history in the melt as well as the melt temperature are important in controlling swelling and orientation at die exit and, ultimately, the stress frozen in the solid material. If the flow separates in passing an obstacle and re-welds downstream, the heterogeneous history in the region of the weld may be remembered and result in an appearance defect, especially in crystalline polymers where melts of different mechanical history may crystallize differently.
+
+Remarkably, there is only one physical phenomenon that underlies swelling, orientation, and memory effects: the relaxation of stresses that build up in the polymeric melt during flow. This demonstrates the importance of rheological studies of these systems.
+
+## Stress Relaxation
+ Stress relaxes by a superposition of modes. At high frequencies, in a dynamic test, and at early times, in a relaxation test, beta-relaxation is believed to involve rotation of the side-groups about the chain backbone as well as other fast rearrangements on the atomic scale. Multiple beta modes may exist. At lower frequencies or later times, the relaxation modes are known as alpha-relaxation, and are generally associated with bond and chain segments reorientation. At later times and in highly entangled melts, mass transport through diffusion of whole chains induces additional relaxation.
+
+Figure 1 shows qualitatively the time evolution of stress during relaxation, in a log-log coordinate system. The contribution of the various modes are clearly delineated.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+    <img src="polymer-dynamics-stress-production-and-relaxation/figure1.jpg" class="img-responsive" alt="Figure 1">
+    </div>
+</div>
+<figcaption>
+<b>Figure 1:</b> Stress relaxation in time, in a log-log plot.
+</figcaption>
+</figure>
+
+## Stress-optical Coefficient
+The refraction index of a transparent polymer depends (among other factors) on its internal structure, i.e. on the orientation and distribution of the chains. In the unloaded state, the chains are randomly oriented and the material is isotropic optically. When stretched, chains align and the polymer becomes birefringent. Interestingly, it is observed experimentally that during the alpha-relaxation regime and for small deformations, the birefringence is proportional to the stress. This relation is quantified by the stress-optical coefficient (SOC) or the ratio of birefringence to stress.
+
+## Molecular Theory
+> <small>the Entropic Spring model</small>
+
+### Features
+ In order to describe stress production in polymeric systems, one imagines the following physical picture: at low strains, the environment of a given atom remains essentially unchanged during stretching. This suggests that energetic interactions are not significantly affected by strain as is the case, for instance, in metals. At the same time however, chains stretch to accommodate the imposed deformation. They become hence preferentially oriented in the stretch direction and the entropy of the system decreases. This generates a thermodynamic driving force for the rebound of the chains and hence a stress in the material. This is, in essence, the Entropic Spring model for the chains. It predicts that, at imposed stretch, stress is proportional to the temperature.
+
+This picture incorporates a number of other assumptions. It is for instance assumed that non-bonded interactions do not contribute to stress, which is due to bonded interactions only. Since the overall stress is (say) tensile, this implies that the chains are in tension.
+
+Stress relaxation corresponds in this description to the return to isotropy of chain segment orientation.
+
+### Limitations
+For a chain (or a segment of a chain) to be statistically regarded as an entropic spring, it must be long enough. The picture has therefore a lower bound length scale. This implies that any structural change which has an intrinsic wavelength smaller than this cut-off cannot be represented and is assumed not to contribute to the overall stress.
+
+# Approach
+This investigation requires extensive molecular dynamics simulations of model polymeric systems. We have used a united atom model of the "pearl-necklace" type to simulate macromolecules having small side groups (Figure 2). The covalent bonds along the chains are simulated by temperature-insensitive springs of large elastic constant, while the interactions between atoms which are not covalently bonded are assumed to be of the van der Waals type and are simulated by a Lennard-Jones potential.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+    <img src="polymer-dynamics-stress-production-and-relaxation/figure2.png" class="img-responsive" alt="Figure 2">
+    </div>
+</div>
+<figcaption>
+<b>Figure 2:</b> The global & intrinsic coordinate systems.
+</figcaption>
+</figure>
+
+The simulations are performed using periodic boundary conditions, as customary in molecular dynamics models. Both equilibrium and non-equilibrium conditions are considered. The non-equilibrium state is induced by extensionally deforming the simulation cell while preserving its volume (Figure 3). The deformation is imposed simply by changing the shape of the cell and is transmitted inside it through the periodic boundary conditions imposed on the system. The simulations are performed in the NVT ensemble.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+    <img src="polymer-dynamics-stress-production-and-relaxation/figure3.jpg" class="img-responsive" alt="Figure 3">
+    </div>
+</div>
+<figcaption>
+<b>Figure 3:</b> Simulation cell before & after deformation.
+</figcaption>
+</figure>
+
+
+## Intrinsic Coordinate System
+Relevant statistical parameters are computed from these simulations. Stress is computed using the virial formula in the coordinate system of the simulation cell (global) as well as in an intrinsic coordinate system tied to and which rotates with each bond (Figure 2).
+
+# Results
+## Atom-based Stress
+The stress computed at the atomic scale is due to both bonded and non-bonded interactions. The magnitude of these two components is comparable. This contradicts the Entropic Spring model in which it is assumed that non-bonded interactions do not generate deviatoric stress (Figure 4).
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+    <img src="polymer-dynamics-stress-production-and-relaxation/figure4.png" class="img-responsive" alt="Figure 4">
+    </div>
+</div>
+<figcaption>
+<b>Figure 4:</b> Atom-based stress.
+</figcaption>
+</figure>
+
+The bonded interactions lead to a negative stress, as opposed to the assumption made in the molecular scale model (Figure 4).
+
+## Intrinsic Stress
+The intrinsic stress tensor is largely insensitive to melt deformation. Figure 5 shows the variation of this quantity in time during relaxation. Intrinsic stresses are denoted the tilda. During this time, the global stress changes as shown in Figure 4.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+    <img src="polymer-dynamics-stress-production-and-relaxation/figure5.png" class="img-responsive" alt="Figure 5">
+    </div>
+</div>
+<figcaption>
+<b>Figure 5:</b> Intrinsic stresses.
+</figcaption>
+</figure>
+
+Since the intrinsic stress is an invariant to deformation at small deformations, the stress-optical coefficient may be expressed in terms of the components of this tensor and hence may be computed from an equilibrium simulation. 
+
+## Intrinsic Distribution
+The atom number density about of a representative atom may be computed in the intrinsic coordinate system. The distribution is non-uniform due to steric shielding. When computed from non-bonded neighbors that are within a bond length from the representative atom, the distribution looks very similar to the familiar radial distribution function (Figure 6). Note that here the x-axis is the angular position. Interesting, this curve may be used to monitor the glass transition, just as `\(g(r)\)` is used.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+    <img src="polymer-dynamics-stress-production-and-relaxation/figure6.png" class="img-responsive" alt="Figure 6">
+    </div>
+</div>
+<figcaption>
+<b>Figure 6:</b> Intrinsic atom number density distribution.
+</figcaption>
+</figure>
+
+## Scale Invariance of the Stress Production Mechanism in Polymeric Systems
+A physical description of stress production that unifies the bond, segment and the chain scales within the Intrinsic Stress Framework has been proposed. The stress is produced by bonded and non-bonded interatomic interactions on the scale of a bead. The global, system level stress results by averaging the atomic level stress in global coordinates. The atomic level stress may be also computed in a family of mobile frames tied to the generic bond, to the generic chain segment, or to the representative ellipsoidal coil (Fig. 7). These intrinsic stresses have significant deviatoric components. We have shown that the bond, the chain segment and the whole chain carry the same deviatoric stress (Figs. 8 and 9). The hydrostatic component of the intrinsic stress scales with the segment length.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+    <img src="polymer-dynamics-stress-production-and-relaxation/figure7.png" class="img-responsive" alt="Figure 7">
+    </div>
+</div>
+<figcaption>
+<b>Figure 7:</b> Definition of the global and bond (a), segment (b) and chain (c) scale intrinsic coordinate systems.
+</figcaption>
+</figure>
+<figure>
+<div class="row">
+    <div class="col-md-12">
+    <img src="polymer-dynamics-stress-production-and-relaxation/figure8.jpg" class="img-responsive" alt="Figure 8">
+    </div>
+</div>
+<figcaption>
+<b>Figure 8:</b> Segment-intrinsic deviatoric stress due to bonded and non-bonded interactions computed in segment-intrinsic coordinates corresponding to chain segments of various length, in the monodisperse system with N = 101. Intrinsic frames defined on various scales carry a scale-invariant deviatoric stress.
+</figcaption>
+</figure>
+<figure>
+<div class="row">
+    <div class="col-md-12">
+    <img src="polymer-dynamics-stress-production-and-relaxation/figure9.jpg" class="img-responsive" alt="Figure 9">
+    </div>
+</div>
+<figcaption>
+<b>Figure 9:</b> Intrinsic deviatoric stress due to bonded and non-bonded interactions computed in the frame tied to the end-to-end vector as a function of the chain length in various monodisperse systems. These quantities are insensitive to N, the chain length for the system considered.
+</figcaption>
+</figure>
+
+The scale invariance of the deviatoric intrinsic stress allows for the development of a unitary description of stress production. In the Intrinsic Stress Framework, the global deviatoric stress is seen as being generated by the preferential orientation of bond-intrinsic frames each carrying a non-zero deviatoric intrinsic stress which is independent of deformation. This physical picture is translated here to larger scales by showing that the global deviatoric stress can be similarly viewed as being associated with the preferential orientation of larger units (segments or chains), which carry a non-zero deviatoric stress. The extension is valid provided the intrinsic stress computed on larger scales (segments or chains) is deformation insensitive, as is the case with the bond-scale intrinsic stress tensor. We have shown that this situation exists late in the relaxation history.
+
+The reorientation of segments (and chains) during a relaxation is described by processes that take place with different rates. During the initial stage of relaxation the internal chain structure (characterized by chain-intrinsic parameters) returns to its equilibrium configuration. This process corresponds to the fast Rouse modes. Once the size of the ellipsoidal coil and the orientation of bonds with respect to the coil axis have equilibrated, the chains rotate to randomize the chain orientation in the global coordinate system. The collective rotation of the chains is described by an exponential decay. Once the first regime completes, the chain scale intrinsic stress reaches the equilibrium value. The physical picture of global stress production described here applies for the second regime.
+
+## The Entropic Nature of Stress
+The molecular scale stress is entropic by definition. It has been proved by means of simulations that the three non-zero components of the intrinsic stress tensor are not purely entropic. However, their energetic components cancel each other such that the global stress is purely entropic (Figure 10). It is interesting that the source of this entropic behavior is the packing entropy (just like in simple liquids) rather than the configurational entropy of the chains as a whole.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+    <img src="polymer-dynamics-stress-production-and-relaxation/figure10.jpg" class="img-responsive" alt="Figure 10">
+    </div>
+</div>
+<figcaption>
+<b>Figure 10:</b> Global stress is purely entropic.
+</figcaption>
+</figure>
+
+## Fast Stress Relaxation in Polymer Melts
+The fast `\(\beta\)` stress relaxation modes in a model polymeric melt are investigated by means of non-equilibrium molecular dynamics simulations. The stress is computed on the atomic level by accounting for both bonded and non-bonded interatomic interactions. Stress relaxation takes place by several modes (Figure 11), each corresponding to specific atomic scale structural changes. The  `\(\beta\)` relaxation corresponds to the return to isotropy of the atomic distribution in the neighborhood of a representative atom RA, and encompasses a quasi-elastic mode (`\(\beta_1\)`), and a slower mode (`\(\beta_2\)`). The neighbor distribution about the representative atom (after subtracting the contribution of preferential bond orientation - "corrected distribution") is shown schematically in Figure 11. At the beginning of relaxation the distribution has a cylindrical symmetry about the stretch direction `\(x_1\)`. At `\(t = 14\)` the corrected distribution is isotropic and the global stress is due to preferential bond orientation only.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+    <img src="polymer-dynamics-stress-production-and-relaxation/figure11.jpg" class="img-responsive" alt="Figure 11">
+    </div>
+</div>
+<figcaption>
+<b>Figure 11:</b> The relaxation modes.
+</figcaption>
+</figure>
+
+
+The `\(\beta_2\)` mode corresponds to the isotropization of the neighbor density about the representative atom as shown in Figure 11, and may be described by a diffusion-like process. The mode is exponential. Figure 12 shows the corrected stress difference during this regime, while Figure 13 shows the relaxation of a measure of the neighbor number density. The two relaxation processes may be described by the same time constant which substantiates the connection between the diffusion-like process and stress relaxation.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+    <img src="polymer-dynamics-stress-production-and-relaxation/figure12.jpg" class="img-responsive" alt="Figure 12">
+    </div>
+</div>
+<figcaption>
+<b>Figure 12:</b> The stress decay is exponential.
+</figcaption>
+</figure>
+<figure>
+<div class="row">
+    <div class="col-md-12">
+    <img src="polymer-dynamics-stress-production-and-relaxation/figure13.jpg" class="img-responsive" alt="Figure 13">
+    </div>
+</div>
+<figcaption>
+<b>Figure 13:</b> The stress relaxation time constant is similar to the one of a measure of density anisotropy.
+</figcaption>
+</figure>
+
+
+The time constant for the exponential mode (`\(\beta_2\)`) may be derived from equilibrium simulations (Figure 14) based on the fluctuation dissipation theorem and a continuum model of diffusion in the neighborhood of a representative atom. This shows that the non-equilibrium system is in the linear response regime during this relaxation period.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+    <img src="polymer-dynamics-stress-production-and-relaxation/figure14.jpg" class="img-responsive" alt="Figure 14">
+    </div>
+</div>
+<figcaption>
+<b>Figure 14:</b> The open symbols represent the time constant evaluated from non-equilibrium molecular dynamics simulations, while the data corresponding to the closed symbols is computed from equilibrium.
+</figcaption>
+</figure>
+
+# References
+* {% cite gao_intrinsic_1989 %} introduced the concept of intrinsic atomic-level stress.
+* {% cite gao_nature_1994 gao_range_1992 %} discuss the validity of the Entropic Spring model and review earlier work.
+* {% cite kroger_polymer_1997 %} develops concepts related to those discussed here.
+
+{% bibliography --cited_in_order %}
+
+# Publications
+
+{% bibliography --file polymer-dynamics-stress-production-and-relaxation %}

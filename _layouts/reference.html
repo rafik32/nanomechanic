@@ -1,0 +1,10 @@
+---
+---
+{{ reference }}
+
+{% if entry.abstract %}
+<button type="submit" class="btn btn-default" key="{{ entry.key }}_abstract" > Show/Hide Abstract </button>
+<div id="{{ entry.key }}_abstract" class="abstract">
+    <blockquote><p class="text-justify"><small>{{ entry.abstract }}</small></p></blockquote>
+</div>
+{% endif %}

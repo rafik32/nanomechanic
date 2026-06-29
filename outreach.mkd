@@ -1,0 +1,50 @@
+---
+layout: page
+title: Outreach
+group: navigation
+nav_weight: 3
+toc: true
+---
+
+# Introduction to Plastics Properties and Characterization
+This Outreach Program is part of a project funded by the National Science Foundation with the title “Stereolithography: Enabling Polymer Network and Multi-Scale Structure Control”. 
+
+General description of the project
+
+Synthetic polymers are broadly divided in thermoplastics and thermosets. Thermoplastics (such as polyethylene and polypropylene) can be melted and re-molded to create new products; therefore, thermoplastics are recyclable. Thermosets (such as epoxy) are network materials, i.e. the molecular chains are crosslinked and form a network. Thermosets do not melt, rather they degrade as the temperature increases above a limit. Thermosets are not recyclable.
+
+While thermosets have larger stiffness and strength than thermoplastics, they are brittle. Generally, it is desirable that a structural material has adequate ductility, such that its rupture is not abrupt/catastrophic. Many efforts have been dedicated to rendering thermosets ductile.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+    <img src="outreach/figure1.png" class="img-responsive" alt="Figure 1" style="width:600px;height:300px;">
+    </div>
+</div>
+<figcaption>
+<b>Figure 1:</b>(a) Schematic of stereolitography. Samples are pulled from a monomer solution shown at the base, as they are polymerized. Polymerization takes place at the lower end of the sample, where a UV beam points. The UV beam is moved to illuminate only the parts of the lower surface of the sample where material has to be added. The sample grows from the bottom. (b) Target mechanical behavior (dashed line) of the thermosets to be produced in the present work.
+</figcaption>
+</figure>
+
+In this project we aim to develop ductile thermosets with strength and stiffness comparable with current epoxies, and with significantly larger toughness. The new concept being implemented is that by rendering the material heterogeneous, its resistance to fracture will increase and this will lead to increased toughness. The proposed advance is shown schematically in Fig. 1b: we intend to combine stiff and brittle sub-domains with soft and ductile subdomain in an architecture which allows obtaining a stress-strain curve as that shown by the dashed line. This is achieved by controlling the structure of the material on multiple scales. On scales from 100 `\(nm\)` to `\(\sim\)` 10 `\(\mu m\)`, we produce heterogeneity by phase separation, while on larger scales we control the heterogeneity by 3D printing. Figure 1a shows the printing method used: stereolithography. 
+
+# Outreach
+The goal of the outreach component of this project is to provide K-12 students with hands-on research opportunities to (1) characterize and identify plastic materials using cutting-edge thermo-mechanical characterization instrumentation, (2) promote their understanding of the thermal properties of polymers, such as glass transition and melting temperatures, which are the main considerations to dictate the usage of polymers in modern life and (3) ultimately enhance their awareness of plastic recycling issues. 
+The following materials walk you through the subjects listed. It is advised to read the Slides first and then watch the associated video. Enjoy!
+
+1.  <b> 3D printing - 2023 </b>([pdf](outreach/3D_Printing.pdf))
+2.  <b> Polymer chemistry - 2023 </b>([pdf](outreach/Polymer_Chemistry.pdf))
+3.    <b> Calorimetry analysis (DSC)</b>([pdf](outreach/Thermal_property_DSC.pdf),[video](outreach/DSC_overview.MOV))
+4.    <b> Fourier Transform Infrared Spectroscopy (FTIR)</b>([pdf](outreach/Chemical_property_FTIR.pdf),[video](outreach/FTIR_overview.MOV))
+5.    <b> Gel permeation chromatography</b>([video](GPC_overview.MOV))
+6.    <b> Thermal polymerization</b>: this is a set of three videos showing the steps by which a monomer solution is polymerized to produce a solid polymeric material.([video1](outreach/Thermal_polymerization_Monomer_Purification.mov),[video2](outreach/Thermal_polymerization_Reactor_set-up.mov),[video3](outreach/Thermal_polymerization_Precipitation_of_polymer.mov))
+7.      <b> High School Outreach - August 2022 </b>([pdf](outreach/Polymer_Chemistry_in_3D_Printing.pdf))
+
+
+
+### Thank you for visiting!
+
+### More educational materials are uploaded periodically.
+
+### Stay tuned!!
+

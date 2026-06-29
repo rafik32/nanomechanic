@@ -1,0 +1,20 @@
+---
+layout: page
+title: "Home"
+group: navigation
+nav_weight: 1
+toc: false
+---
+
+## Welcome!
+
+[<img align="right" src="homepage/book.jpg">](https://www.cambridge.org/core/books/network-materials/A1D55710CFFD0D5DCD54AE9EE133E33A)
+
+The research of our group is focused on the mechanics of discrete systems with emphasis on the molecular structure and properties of materials and linking materials' behavior from molecular to larger scales.
+
+For details about our research activities please use the menu bar above. We hope you will enjoy it!
+
+*The Group Members*
+
+([Contact Us](mailto:picuc@rpi.edu?subject=Nanomechanics_Laboratory_Website))
+

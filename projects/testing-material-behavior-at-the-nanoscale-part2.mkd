@@ -1,0 +1,78 @@
+---
+layout: project
+title: Measuring the Stiffness and Strength of Defective Graphene
+sponsors:
+    - name: US Office of Naval Research
+      link: www.onr.navy.mil
+      note: >
+             <h4>Award Number: N000140910928</h4>
+    - name: National Science Foundation
+      link: http://www.nsf.gov
+      note: >
+             <h4>Award Number: 1234641</h4>
+             <small>Any opinions, findings, and conclusions or recommendations 
+             expressed in this material are those of the author(s) and do not 
+             necessarily reflect the views of the National Science Foundation</small>
+
+faculty:
+    - name: Catalin R. Picu
+      title: Professor
+    - name: Nikhil Koratkar
+      title: Professor
+    - name: James Hone (Columbia University)
+      title: Professor
+students:
+    - name: A. Zandiatashbar 
+      title: Graduate Research Assistant
+project: testing
+order: 2
+toc: true
+---
+
+# Outline
+Graphene is currently studied as reinforcing element for polymer nanocomposites – among many other applications. It is considered that its exceptional stiffness and strength should impart similar properties to the composite. However, this depends on the strength of the interface and on the state of the graphene sheets. Good interface strength requires good bonding of polymeric chains to graphene which, in turn, requires that the graphene sheets contain defects, such as vacancies and functionalization groups. How fast the properties of graphene degrade as the concentration of defects increases? To study this problem, we prepared graphene with controlled concentration of vacancies by exposing pristine graphene to oxygen plasma for specific time intervals. The concentration was evaluated, indirectly, using Raman spectroscopy after the plasma etching treatment. Then, the sheets were placed on top of a substrate with holes of known diameter (Fig. 11(b)). Mechanical testing was performed with the tip of an AFM, as shown in Fig. 11(a). Figure 11(c) shows an AFM scan of the sheet placed on top of the substrate. One can see the holes not covered by the sheet (black), while the other ones are not visible.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+    <img src="testing-material-behavior-at-the-nanoscale/figure11.jpg" class="img-responsive" alt="Figure 11">
+    </div>
+</div>
+<figcaption>
+<b>Figure 11:</b> Schematic of testing set-up (a) and images of graphene placed on top of a substrate with holes, (b) and (c).
+</figcaption>
+</figure>
+
+Figure 12 shows HRTEM images of the defective graphene sheets.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+    <img src="testing-material-behavior-at-the-nanoscale/figure12.jpg" class="img-responsive" alt="Figure 12">
+    </div>
+</div>
+<figcaption>
+<b>Figure 12:</b> HRTEM images of defective graphene.
+</figcaption>
+</figure>
+
+
+Figure 13 shows the relationship between stiffness (left panel)/strength (right panel) and the time graphene was exposed to plasma. The Raman curves are also presented to help correlate the exposure time to the defective state of the structure.
+
+The importance of these results is that they allow probing the strength and stiffness of a batch of graphene which is to be used as reinforcing element in a nanocomposite by a simple Raman probing, i.e. in a much simpler way (which is also amenable to automation) than testing individual sheets.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+    <img src="testing-material-behavior-at-the-nanoscale/figure13.jpg" class="img-responsive" alt="Figure 13">
+    </div>
+</div>
+<figcaption>
+<b>Figure 13:</b> Variation of the stiffness (left) and strength (right) of graphene sheets with the time the sheets were exposed to oxygen plasma. The lower curves correspond to the Raman signature – see legend.
+</figcaption>
+</figure>
+
+This study was published in {% cite zandiatashbar_effect_2014 %}.
+
+# References
+{% bibliography --cited_in_order %}

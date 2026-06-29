@@ -1,0 +1,45 @@
+---
+layout: base
+---
+{% include hide_abstract %}
+<div class="page-title"><h1>{{page.title}}</h1></div>
+<hr>
+
+{% assign items = site.projects| sort: 'order' %}
+{% for project in items %}
+{% if project.project == page.project and page.url != project.url %}
+    <div class="project-title"><h1>{{project.title}}</h1></div>
+	<hr>
+    <div class="row project-head show-grid">
+        <div class="col-md-4">
+            <h2> Project Sponsors </h2>
+            {% for sponsor in project.sponsors %}
+            <h3><a href="{{ sponsor.link }}">{{ sponsor.name }}</a></h3>
+            {% if sponsor.note %}
+            {{ sponsor.note }}
+            {% endif%}
+            <hr>
+            {% endfor %}
+        </div>
+        <div class="col-md-4">
+            <h2> Faculty Participants</h2>
+            {% for faculty in project.faculty %}
+            <h3>{{ faculty.name }}<br> <small>{{ faculty.title }}</small> </h3>
+            <hr>
+            {% endfor %}
+        </div>
+        <div class="col-md-4">
+            <h2> Current and Former Students </h2>
+            {% for student in project.students %}
+            <h3>{{ student.name }} <br> <small>{{ student.title }}</small> </h3>
+            <hr>
+            {% endfor %}
+        </div>
+    </div> <!-- /project-head --!>
+    <div class="row">
+        <div class="col-md-12 text-justify">
+            <p class="lead">{{ project.content }}</p>
+        </div>
+    </div>
+{%endif %}
+{% endfor %}

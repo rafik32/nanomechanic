@@ -1,0 +1,40 @@
+---
+layout: page
+title: Publications
+group: navigation
+nav_weight: 5
+toc: true
+---
+
+## Soft Matter
+> <small> Mechanics of Fiber Networks </small>
+{% bibliography --file Soft Matter - Mechanics of Fiber Networks %}
+
+## Molecular Networks (Epoxy and Vitirmers) and Polymer Nanocomposites
+{% bibliography --file Molecular Networks (Epoxy and Vitirmers) and Polymer Nanocomposites %}
+
+## Mechanics of Molecular Crystals
+{% bibliography --file Mechanics of Molecular Crystals %}
+
+## Plastic Deformation in Metals and Alloys
+{% bibliography --file Plastic Deformation in Metals and Alloys %}
+
+## Multiscale Modeling
+> <small> Concurrent Atomistic-Continuum Methods </small>
+
+{% bibliography --file Multiscale Modeling - Concurrent Atomistic-Continuum Methods %}
+
+## Nanostructure Mechanical Behavior
+> <small> Testing at the Nanoscale </small>
+
+{% bibliography --file Nanostructure Mechanical Behavior - Testing at the Nanoscale %}
+
+## Materials with Hierarchical Fractal Microstructure
+{% bibliography --file Materials with Hierarchical Fractal Microstructure %}
+
+## Problems in Elasticity, Fracture Mechanics and Dislocation Theory
+{% bibliography --file Problems in Elasticity, Fracture Mechanics and Dislocation Theory %}
+
+## Other topics
+testing testing testing
+{% bibliography --file Other topics %}

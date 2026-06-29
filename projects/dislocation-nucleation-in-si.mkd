@@ -1,0 +1,70 @@
+---
+layout: project
+title: Dislocation Nucleation in Si
+sponsors:
+    - name: IBM
+      link: http://www.ibm.com
+    - name: Center for Computational Innovation (CCI) at RPI
+      link: http://cci.rpi.edu/
+faculty:
+    - name: Catalin Picu
+      title: Professor
+students:
+    - name: Zhi Li
+      title: Graduate Research Assistant
+toc: true
+---
+
+# Description
+Stress improves semiconductor device performance by improving carrier transport. Dual stress liners (DSL) are commonly incorporated into device designs to improve both electron andhole transport. Embedded SiGe is added to PFET's design to create additional strain in the channel for even better PFET performance.  However, large stress fields can cause dislocation nucleation, leading to increased leakage currents or shorts.  Dislocations form from stress concentrator sites such as re-entrant corners and joints of dissimilar materials, which are abundant in devices.  Furthermore, complex SiGe domain geometries introduce stress states which may or may not be well predicted using current continuum modeling methods. The stress state induced by SiGe layers is essential in the function of current and future devices and it should be insured that this field does not lead to damage nucleation.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+        <img src="dislocation-nucleation-in-si/1.png" class="img-responsive" alt="Figure 1">
+    </div>
+</div>
+<figcaption>
+<b>Figure 1:</b> Schematic structure of a transistor showing the position of SiGe straining layers. The stress that develops in the channel (green region in the figure on left) can be quite high (right figure).
+</figcaption>
+</figure>
+
+We have studied the nucleation of dislocations from stress concentration sites with idealized geometries using atomistic models. Both pure Si and Si-x%Ge models have been considered. The fraction of Ge in Si, x, was kept as a parameter. Figure 2 shows the geometry of one of the models considered. The stress close to the re-entrant corner is much larger than elsewhere and drives defect nucleation from the corner. Once nucleated, the defect is under the action of another force, the "image force" which pulls the dislocation back to the surface. As the dislocation moves into the material, both image and driving force decrease. 
+
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+        <img src="dislocation-nucleation-in-si/2.png" class="img-responsive" alt="Figure 2">
+    </div>
+</div>
+<figcaption>
+<b>Figure 2:</b>Geometry of the model used to study dislocation nucleation.
+</figcaption>
+</figure>
+
+As the nucleus of a new dislocation forms, the energy goes up (driving force does work against the image force). When the nucleus becomes large enough, the energy reaches a maximum and then decreases. This maximum energy is called the activation energy for nucleation and the configuration corresponding to this state is the critical nucleus. Figure 3 shows the critical nucleus forming next to the corner and the variation of the energy with during the defect nucleation process. The activation energy for nucleation is approximately 11eV. This indicates that in order to force the nucleation of a dislocation, increasing the temperature is insufficient and one has to apply a large stress.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+        <img src="dislocation-nucleation-in-si/3.png" class="img-responsive" alt="Figure 3">
+    </div>
+</div>
+<figcaption>
+<b>Figure 3: a)</b> Critical nucleus of a dislocation nucleating from a sharp corner in pure Si. <b>b)</b> The variation of the total energy during the nucleation process.
+</figcaption>
+</figure>
+
+In presence of Ge (i.e. in substitutional alloys of Si-x%Ge), the situation is similar, but the activation energy for nucleation decreases. Figure 4 shows the variation of this parameter with the Ge concentration, x. As x increases up to 30%Ge, the activation energy decreases by approximately 20%, which is a non-negligible effect.
+
+<figure>
+<div class="row">
+    <div class="col-md-12">
+        <img src="dislocation-nucleation-in-si/4.png" class="img-responsive" alt="Figure 4">
+    </div>
+</div>
+<figcaption>
+<b>Figure 4:</b> The variation of the activation energy for nucleation with the concentration of Ge in Si, x. The inset shows the distribution of Ge atoms (blue) in the glide plane. The pinky atoms are Si.
+</figcaption>
+</figure>
